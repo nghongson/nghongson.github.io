@@ -1,0 +1,8 @@
+{
+  "label": "Docs Mage2",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Mage2 Guides"
+  }
+}
