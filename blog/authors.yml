@@ -10,8 +10,8 @@ yangshun:
   url: https://github.com/yangshun
   image_url: https://github.com/yangshun.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+leonguyen:
+  name: Leo Nguyen
+  title: Backend Developer
+  url: https://github.com/nghongson/
+  image_url: /img/leo.jpg
