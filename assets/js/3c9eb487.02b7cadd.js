@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[3840],{8564:e=>{e.exports=JSON.parse('{"title":"Server","description":"My config .tmux","slug":"/category/server","permalink":"/docs/category/server","navigation":{"previous":{"title":"Docs","permalink":"/docs/intro"},"next":{"title":"start-with-bash","permalink":"/docs/server/bash/start-with-bash"}}}')}}]);
