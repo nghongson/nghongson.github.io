@@ -1,16 +1,12 @@
-# My dotfiles
-
-System : 
+# My config set up system: 
 
 [i3wm](https://i3wm.org/docs/refcard.html)
 Sway mapping
+$mod = Window  
+S = shift  
 
-$mod = Window
-S = shift
-mapping :
+# Mapping keyboard
 ```
-
-
 $mod + S + q
 $mod + S + c 
 $mod + S + b
@@ -52,7 +48,7 @@ $mod + S + &#8592 &#8593 &#8594 &#8595 : move window
 
 ```
 
-Setup after install
+# Setup after install
 
 Get fastest mirror
 ```
@@ -94,3 +90,25 @@ echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
 echo "options hid_apple fnmode=0" | sudo tee -a /etc/modprobe.d/hid_apple.conf
 ```
 
+install oh-my-zsh
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Install tmux
+```
+sudo pacman -Sy tmux
+cd ~
+git clone https://github.com/gpakosz/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp .tmux/.tmux.conf.local .
+```
+
+Install neovim 
+```
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim/site ~/.local/share/nvim/site.bak
+
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+nvim +PackerSync
+```
