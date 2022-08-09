@@ -87,3 +87,10 @@ git clone https://aur.archlinux.org/google-chrome.git
 cd google-chrome
 makepkg -si
 ```
+
+Fix keyboard
+```
+echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
+echo "options hid_apple fnmode=0" | sudo tee -a /etc/modprobe.d/hid_apple.conf
+```
+

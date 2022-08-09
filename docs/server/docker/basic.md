@@ -15,6 +15,7 @@ sudo pacman -Sy docker-compose
 vm.overcommit_memory=1
 vm.max_map_count=262144
 net.core.somaxconn=65535
+sysctl --system //Reload sysctl vars
 
 #live system
 sysctl -w vm.overcommit_memory=1
