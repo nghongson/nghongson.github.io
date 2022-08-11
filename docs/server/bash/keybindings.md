@@ -20,3 +20,6 @@ Esc + T   |  Swap the last two words before the cursor
 Alt + F   |  Move cursor forward one word on the current line
 Alt + B   |  Move cursor backward one word on the current line
 Tab       |  Auto-complete files and folder names
+
+
+[Vi mode](https://dev.to/brandonwallace/how-to-use-vim-mode-on-the-command-line-in-bash-fnn)
