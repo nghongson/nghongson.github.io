@@ -23,3 +23,6 @@ Tab       |  Auto-complete files and folder names
 
 
 [Vi mode](https://dev.to/brandonwallace/how-to-use-vim-mode-on-the-command-line-in-bash-fnn)
+[Zsh docs](https://zsh.sourceforge.io/Doc/Release/Zsh-Line-Editor.html)
+
+
