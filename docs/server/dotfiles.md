@@ -77,6 +77,12 @@ Install base-devel package
 sudo pacman -S base-devel git --needed 
 ```
 
+Fix time
+```
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
+
+```
+
 Install chrome
 ```
 git clone https://aur.archlinux.org/google-chrome.git
