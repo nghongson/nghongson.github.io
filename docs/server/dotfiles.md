@@ -1,4 +1,4 @@
-# My config set up system: 
+# My config setup system 
 
 [i3wm](https://i3wm.org/docs/refcard.html)
 Sway mapping
@@ -79,6 +79,8 @@ sudo pacman -S base-devel git --needed
 
 Fix time
 ```
+sudo pacman -S ntp
+sudo systemctl start ntpd.service
 sudo timedatectl set-local-rtc 1 --adjust-system-clock
 
 ```
