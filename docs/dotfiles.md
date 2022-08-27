@@ -99,6 +99,13 @@ sudo pacman -Sy ranger
 sudo pacman -Sy mkcert
 
 ```
+Auto Mount 
+```
+sudo nvim /etc/fstab
+lsblk -f
+
+UUID={UUID}  {MOUNT_FOLDER} ext4 defaults 0 2
+```
 
 ## [i3wm](https://i3wm.org/docs/refcard.html)
 Sway mapping
