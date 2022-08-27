@@ -1,53 +1,5 @@
 # My config setup system 
 
-[i3wm](https://i3wm.org/docs/refcard.html)
-Sway mapping
-$mod = Window  
-S = shift  
-
-# Mapping keyboard
-```
-$mod + S + q
-$mod + S + c 
-$mod + S + b
-
-$mod + S + [0-9]
-$mod + S + n
-$mod + S + m
-
-$mod + s : Window stacking
-$mod + w : Window tabbing
-$mod + e : Window splitting
-
-$mod + [0-9] : Switch workspace
-$mod + n : New workspace
-
-$mode + S + space : Toggle floating
-
-$mod + f : Toggle full mode
-$mod + S + f : Global full
-
-$mod + Enter : Terminal
-$mod + d : Menu applications
-$mod + S + p 
-$mod + S + d
-
-$mod + ?
-
-$mod + S + e
-
-
-## Moving 
-
-$mod + v
-$mod + b
-
-$mod + &#8592 &#8593 &#8594 &#8595 : focus window
-$mod + S + &#8592 &#8593 &#8594 &#8595 : move window
-
-
-```
-
 # Setup after install
 
 Get fastest mirror
@@ -120,3 +72,80 @@ mv ~/.local/share/nvim/site ~/.local/share/nvim/site.bak
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 nvim +PackerSync
 ```
+
+Asus setup
+```
+/etc/pacman.conf
+[g14]
+SigLevel = DatabaseNever Optional TrustAll
+Server = https://arch.asus-linux.org
+
+pacman -Suy
+
+pacman -S asusctl
+
+systemctl enable --now power-profiles-daemon.service
+
+pacman -S supergfxctl
+
+systemctl enable --now supergfxd
+```
+
+Applications
+```
+sudo pacman -Sy neofetch
+sudo pacman -Sy evince // PDF viewer
+sudo pacman -Sy ranger 
+sudo pacman -Sy mkcert
+
+```
+
+## [i3wm](https://i3wm.org/docs/refcard.html)
+Sway mapping
+$mod = Window  
+S = shift  
+
+### Mapping keyboard
+```
+$mod + S + q
+$mod + S + c 
+$mod + S + b
+
+$mod + S + [0-9]
+$mod + S + n
+$mod + S + m
+
+$mod + s : Window stacking
+$mod + w : Window tabbing
+$mod + e : Window splitting
+
+$mod + [0-9] : Switch workspace
+$mod + n : New workspace
+
+$mode + S + space : Toggle floating
+
+$mod + f : Toggle full mode
+$mod + S + f : Global full
+
+$mod + Enter : Terminal
+$mod + d : Menu applications
+$mod + S + p 
+$mod + S + d
+
+$mod + ?
+
+$mod + S + e
+
+
+## Moving 
+
+$mod + v
+$mod + b
+
+$mod + &#8592 &#8593 &#8594 &#8595 : focus window
+$mod + S + &#8592 &#8593 &#8594 &#8595 : move window
+
+
+```
+
+
