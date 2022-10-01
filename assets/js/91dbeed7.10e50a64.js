@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[7438],{6145:e=>{e.exports=JSON.parse('{"title":"Database","description":"Database","slug":"/category/database","permalink":"/docs/category/database","navigation":{"previous":{"title":"My config setup system","permalink":"/docs/workflow/dotfiles"},"next":{"title":"MySQL","permalink":"/docs/category/mysql"}}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[1875],{2457:e=>{e.exports=JSON.parse('{"title":"Architect","description":"Architect","slug":"/category/architect","permalink":"/docs/category/architect","navigation":{"previous":{"title":"setup","permalink":"/docs/server/nginx/setup"},"next":{"title":"Clean Code","permalink":"/docs/architect/clean-code"}}}')}}]);

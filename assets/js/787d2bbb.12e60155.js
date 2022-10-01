@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[6013],{1617:e=>{e.exports=JSON.parse('{"title":"Tmux","description":"My config .tmux","slug":"/category/tmux","permalink":"/docs/category/tmux","navigation":{"previous":{"title":"My Workflow","permalink":"/docs/category/my-workflow"},"next":{"title":"Basic concepts","permalink":"/docs/workflow/tmux/basic"}}}')}}]);
