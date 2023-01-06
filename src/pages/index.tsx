@@ -35,9 +35,7 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <header className="bg-blue-500">
       <div className="container mx-auto text-center py-24">
-        <h1 className="text-4xl font-bold text-white">{siteConfig.title}</h1>
-        <p className="text-xl py-6 text-white">{siteConfig.tagline}</p>
-
+        <h1 className="text-4xl font-bold text-white">Tailwind</h1>
         <div className="py-10">
           <Link
             className="bg-white rounded-md text-gray-500 px-4 py-2"
@@ -49,6 +47,7 @@ export default function Home(): JSX.Element {
       </div>
     </header>
       <main>
+        
         <HomepageFeatures />
       </main>
     </Layout>
