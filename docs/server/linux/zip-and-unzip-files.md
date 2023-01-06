@@ -34,4 +34,7 @@ tar -xf archive.tar -C /opt/files
 
 ### Tar Xz File (*.tar.xz)
 
+### First basic zip command 
+`zip` command
+
 
