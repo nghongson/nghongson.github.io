@@ -1,8 +1,0 @@
-{
-  "label": "Vim Docs",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "My config .tmux"
-  }
-}
