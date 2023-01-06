@@ -33,4 +33,7 @@ tail
 
 ## Unzip
 
-
+## Sync file 
+while inotifywait -r -e modify,create,delete,move /directory; do
+    rsync -avz /directory /target
+done
