@@ -1,8 +1,8 @@
 {
-  "label": "Bash Programing",
+  "label": "Linux",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Programing with bash"
+    "description": "Linux"
   }
 }
