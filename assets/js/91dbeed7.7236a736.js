@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[7438],{6145:a=>{a.exports=JSON.parse('{"title":"Database","description":"Database","slug":"/category/database","permalink":"/docs/category/database","navigation":{"previous":{"title":"My Tmux Workflow","permalink":"/docs/workflow/tmux-workflow"},"next":{"title":"MySQL","permalink":"/docs/category/mysql"}}}')}}]);
