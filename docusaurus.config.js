@@ -67,7 +67,6 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'About Me',
         logo: {
           alt: 'Leo Logo',
           src: 'img/leo.jpg',
