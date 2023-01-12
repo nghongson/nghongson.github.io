@@ -22,5 +22,13 @@ sysctl -w vm.overcommit_memory=1
 sysctl -w vm.max_map_count=262144
 sysctl -w net.core.somaxconn=65535
 
+# docker network
+
+sudo ip addr show docker0
+
+Localhost :
+172.17.0.1
+localhost
+host.docker.internal
 
 ```
