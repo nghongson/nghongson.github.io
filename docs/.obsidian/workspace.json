@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "607869b3b090175f",
+        "id": "d37d464f4ee313c2",
         "type": "tabs",
         "children": [
           {
-            "id": "29431390944e4d7b",
+            "id": "32f33e9d2655f642",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ref.md",
+                "file": "architect/GraphQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ref.md",
+                "file": "architect/GraphQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ref.md",
+                "file": "architect/GraphQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ref.md"
+                "file": "architect/GraphQL.md"
               }
             }
+          },
+          {
+            "id": "39586378d36c00ce",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -144,17 +152,23 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "29431390944e4d7b",
+  "active": "32f33e9d2655f642",
   "lastOpenFiles": [
-    "tasks.md",
+    "nodejs/_category_.json~",
+    "nodejs/_category_.json",
+    "nodejs/index.md~",
+    "architect/gRPC.md",
+    "architect/design-patterns/abstract-factory.md",
+    "Excalidraw/Drawing 2024-05-28 02.12.41.excalidraw.md",
     "ref.md",
+    "tasks.md",
     "books.md",
     "intro.md",
     "2024-05-28.md",
-    "Excalidraw/Drawing 2024-05-28 02.12.41.excalidraw.md",
     "Excalidraw",
     "nodejs/graphql/resolvers.md",
     "nodejs/middleware.md",
@@ -166,7 +180,6 @@
     "golang",
     "architect/php-caching.md",
     "architect/php-batch.md",
-    "architect/12factors.md",
-    "architect/design-patterns/abstract-factory.md"
+    "architect/12factors.md"
   ]
 }

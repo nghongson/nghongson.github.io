@@ -1,4 +1,6 @@
 [
   "obsidian-tasks-plugin",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "mermaid-tools",
+  "mehrmaid"
 ]
