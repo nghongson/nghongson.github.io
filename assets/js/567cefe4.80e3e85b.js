@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[5565],{2687:e=>{e.exports=JSON.parse('{"title":"Nodejs","description":"Nodejs","slug":"/category/nodejs","permalink":"/docs/category/nodejs","navigation":{"previous":{"title":"Extensibility and modularity","permalink":"/docs/mage2/modularity"},"next":{"title":"auth","permalink":"/docs/nodejs/auth"}}}')}}]);
