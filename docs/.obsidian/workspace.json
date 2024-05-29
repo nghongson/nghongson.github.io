@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d37d464f4ee313c2",
+        "id": "06bba15636f65dbe",
         "type": "tabs",
         "children": [
           {
-            "id": "32f33e9d2655f642",
+            "id": "d282734f7422f734",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vim/Cheat Sheet.md",
+                "file": "server/kubernetes/Kubernetes vs Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vim/Cheat Sheet.md",
+                "file": "server/kubernetes/Kubernetes vs Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vim/Cheat Sheet.md",
+                "file": "server/kubernetes/Kubernetes vs Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vim/Cheat Sheet.md"
+                "file": "server/kubernetes/Kubernetes vs Docker.md"
               }
             }
           },
@@ -138,12 +138,11 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -157,15 +156,30 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "32f33e9d2655f642",
+  "active": "d282734f7422f734",
   "lastOpenFiles": [
-    "Pasted image 20240530015656.png",
+    "server/kubernetes/docker-to-kubernetes.md",
+    "server/kubernetes/Kubernetes vs Docker.md",
+    "vim/vim-mode.md",
+    "Pasted image 20240530020726.png",
     "vim/mapping.md",
     "vim/Cheat Sheet.md",
+    "database/mysql/Replication.md",
+    "database/mysql/how-to-optimize-MySQL.md",
+    "workflow/tmux.md",
+    "workflow/dotfiles.md",
+    "workflow/tmux-workflow.md",
+    "tasks.md",
+    "vim/help.md",
+    "Pasted image 20240530015656.png.md",
+    "mage2/setup.md",
+    "books/head-first-design-patterns.pdf.md",
+    "books.md",
+    "books",
+    "Pasted image 20240530015656.png",
     "Pasted image 20240530015604.png",
     "vim/register.md",
     "vim/neovim.md",
-    "vim/help.md",
     "vim/buffers.md",
     "architect/GraphQL.md",
     "architect/cookies.md",
@@ -174,20 +188,8 @@
     "architect/asycnhronous.md",
     "architect/12factors.md",
     "architect/design-patterns/SOLID.md",
-    "architect/design-patterns/abstract-factory.md",
-    "microservices/basic.md",
-    "Excalidraw/Drawing 2024-05-28 10.56.14.excalidraw.md",
     "Excalidraw",
-    "microservices/Kafka/index.md",
     "microservices/Event-Driven Systems",
-    "nodejs/Authentication.md",
-    "nodejs/Authorization.md",
-    "mage2/authorization.md",
-    "mage2/asynchronous.md",
-    "mage2/caching-layer.md",
-    "mage2/catalog.md",
-    "mage2/admin.md",
-    "mage2/2FA.md",
     "nodejs/_category_.json~",
     "nodejs/_category_.json",
     "nodejs/index.md~",

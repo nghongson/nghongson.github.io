@@ -66,7 +66,13 @@ Split to the pane varically or the pane horizontal
 ```
 <prefix> + x
 ```
-
+### Tmux Kill command
+```
+tmux kill-session -t {session}
+tmux kill-window
+tmux kill-pane
+tmux kill-server
+```
 ### Navigation
 ```
 <prefix> + q : Show pane numbers

@@ -90,5 +90,7 @@ C + d
 # Vim mode on Tmux
 [https://waylonwalker.com/tmux-copy-mode/](https://waylonwalker.com/tmux-copy-mode/)
 ```
-<prefix> + Enter
+<prefix> + Enter : Goto copy mode
+begin-selection : Space
+copy-selection-and-cancel : Enter 
 ```
