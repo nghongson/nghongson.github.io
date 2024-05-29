@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architect/GraphQL.md",
+                "file": "architect/design-patterns/SOLID.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architect/GraphQL.md",
+                "file": "architect/design-patterns/SOLID.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architect/GraphQL.md",
+                "file": "architect/design-patterns/SOLID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,12 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architect/GraphQL.md"
+                "file": "architect/design-patterns/SOLID.md"
               }
             }
           },
           {
-            "id": "39586378d36c00ce",
+            "id": "f2e13e51447495bb",
             "type": "leaf",
             "state": {
               "type": "mermaid-toolbar-view",
@@ -138,11 +138,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,28 +159,38 @@
   },
   "active": "32f33e9d2655f642",
   "lastOpenFiles": [
+    "architect/design-patterns/abstract-factory.md",
+    "architect/design-patterns/SOLID.md",
+    "microservices/basic.md",
+    "Excalidraw/Drawing 2024-05-28 10.56.14.excalidraw.md",
+    "Excalidraw",
+    "microservices/Kafka/index.md",
+    "microservices/Event-Driven Systems",
+    "nodejs/Authentication.md",
+    "nodejs/Authorization.md",
+    "mage2/authorization.md",
+    "mage2/asynchronous.md",
+    "mage2/caching-layer.md",
+    "mage2/catalog.md",
+    "mage2/admin.md",
+    "mage2/2FA.md",
+    "mage2/ layout-initialization-process.md",
+    "server/docker/basic.md",
+    "architect/background-process.md",
+    "architect/asycnhronous.md",
+    "architect/12factors.md",
+    "architect/design-patterns/adapter.md",
+    "tasks.md",
+    "ref.md",
+    "intro.md",
+    "server/linux/commands.md",
+    "server/linux/awk.md",
+    "architect/design-patterns/builder.md",
+    "server/linux/kernel.md",
     "nodejs/_category_.json~",
     "nodejs/_category_.json",
     "nodejs/index.md~",
-    "architect/gRPC.md",
-    "architect/design-patterns/abstract-factory.md",
-    "Excalidraw/Drawing 2024-05-28 02.12.41.excalidraw.md",
-    "ref.md",
-    "tasks.md",
-    "books.md",
-    "intro.md",
-    "2024-05-28.md",
-    "Excalidraw",
-    "nodejs/graphql/resolvers.md",
-    "nodejs/middleware.md",
-    "nodejs/index.md",
-    "nodejs/auth.md",
-    "nodejs/orm.md",
     "nextjs",
-    "architect/php-composer.md",
-    "golang",
-    "architect/php-caching.md",
-    "architect/php-batch.md",
-    "architect/12factors.md"
+    "golang"
   ]
 }
