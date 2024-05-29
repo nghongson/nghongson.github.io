@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architect/design-patterns/SOLID.md",
+                "file": "vim/Cheat Sheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architect/design-patterns/SOLID.md",
+                "file": "vim/Cheat Sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architect/design-patterns/SOLID.md",
+                "file": "vim/Cheat Sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architect/design-patterns/SOLID.md"
+                "file": "vim/Cheat Sheet.md"
               }
             }
           },
@@ -159,8 +159,22 @@
   },
   "active": "32f33e9d2655f642",
   "lastOpenFiles": [
-    "architect/design-patterns/abstract-factory.md",
+    "Pasted image 20240530015656.png",
+    "vim/mapping.md",
+    "vim/Cheat Sheet.md",
+    "Pasted image 20240530015604.png",
+    "vim/register.md",
+    "vim/neovim.md",
+    "vim/help.md",
+    "vim/buffers.md",
+    "architect/GraphQL.md",
+    "architect/cookies.md",
+    "architect/clean-code.md",
+    "architect/background-process.md",
+    "architect/asycnhronous.md",
+    "architect/12factors.md",
     "architect/design-patterns/SOLID.md",
+    "architect/design-patterns/abstract-factory.md",
     "microservices/basic.md",
     "Excalidraw/Drawing 2024-05-28 10.56.14.excalidraw.md",
     "Excalidraw",
@@ -174,19 +188,6 @@
     "mage2/catalog.md",
     "mage2/admin.md",
     "mage2/2FA.md",
-    "mage2/ layout-initialization-process.md",
-    "server/docker/basic.md",
-    "architect/background-process.md",
-    "architect/asycnhronous.md",
-    "architect/12factors.md",
-    "architect/design-patterns/adapter.md",
-    "tasks.md",
-    "ref.md",
-    "intro.md",
-    "server/linux/commands.md",
-    "server/linux/awk.md",
-    "architect/design-patterns/builder.md",
-    "server/linux/kernel.md",
     "nodejs/_category_.json~",
     "nodejs/_category_.json",
     "nodejs/index.md~",

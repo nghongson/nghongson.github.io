@@ -26,3 +26,4 @@
 - `<leader>gc` : Git commit
 
 
+![[Pasted image 20240530015604.png]]
