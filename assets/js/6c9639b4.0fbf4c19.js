@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[7250],{1552:o=>{o.exports=JSON.parse('{"title":"My Workflow","slug":"/category/my-workflow","permalink":"/docs/category/my-workflow","navigation":{"previous":{"title":"orm","permalink":"/docs/nodejs/orm"},"next":{"title":"Basic concepts","permalink":"/docs/workflow/basic"}}}')}}]);
