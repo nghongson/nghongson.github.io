@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "golang/SOLID Golang.md",
+                "file": "server/linux/Hardware info.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "golang/SOLID Golang.md",
+                "file": "server/linux/Hardware info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "golang/SOLID Golang.md",
+                "file": "server/linux/Hardware info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "golang/SOLID Golang.md"
+                "file": "server/linux/Hardware info.md"
               }
             }
           },
@@ -157,8 +157,10 @@
   },
   "active": "d282734f7422f734",
   "lastOpenFiles": [
-    "architect/SOLID.md",
     "golang/SOLID Golang.md",
+    "server/linux/Hardware info.md",
+    "server/linux/system-trace.md",
+    "architect/SOLID.md",
     "architect/KISS.md",
     "architect/session.md",
     "architect/12factors.md",
@@ -187,8 +189,6 @@
     "vim/vim-mode.md",
     "vim/mapping.md",
     "database/mysql/Replication.md",
-    "database/mysql/how-to-optimize-MySQL.md",
-    "workflow/tmux.md",
     "books",
     "Pasted image 20240530015656.png",
     "Pasted image 20240530015604.png",
