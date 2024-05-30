@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "microservices/basic.md",
+                "file": "vim/Cheat Sheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "microservices/basic.md",
+                "file": "vim/Cheat Sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "microservices/basic.md",
+                "file": "vim/Cheat Sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "microservices/basic.md"
+                "file": "vim/Cheat Sheet.md"
               }
             }
           },
@@ -157,15 +157,17 @@
   },
   "active": "d282734f7422f734",
   "lastOpenFiles": [
+    "Pasted image 20240530083507.png",
+    "Pasted image 20240530020726.png",
+    "vim/Cheat Sheet.md",
+    "microservices/basic.md",
     "mage2/ layout-initialization-process.md",
     "mage2/setup.md",
     "server/kubernetes/Kubernetes vs Docker.md",
     "mage2/setup.md~",
     "server/kubernetes/docker-to-kubernetes.md",
     "vim/vim-mode.md",
-    "Pasted image 20240530020726.png",
     "vim/mapping.md",
-    "vim/Cheat Sheet.md",
     "database/mysql/Replication.md",
     "database/mysql/how-to-optimize-MySQL.md",
     "workflow/tmux.md",
@@ -186,8 +188,6 @@
     "architect/cookies.md",
     "architect/clean-code.md",
     "architect/background-process.md",
-    "architect/asycnhronous.md",
-    "architect/12factors.md",
     "Excalidraw",
     "microservices/Event-Driven Systems",
     "nodejs/_category_.json~",

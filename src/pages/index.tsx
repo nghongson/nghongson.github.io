@@ -27,7 +27,7 @@ export default function Home(): JSX.Element {
                   <div className="mt-4 mr-auto mb-4 ml-auto bg-gray-900 max-w-lg">
                     <div className="flex flex-col items-center pt-6 pr-6 pb-6 pl-6">
                       <img
-                        src={require("@site/static/img/leonguyen.jpg").default}
+                        src={require("@site/static/img/leo.jpg").default}
                         className="flex-shrink-0 object-cover object-center btn- flex w-16 h-16 mr-auto -mb-8 ml-auto rounded-full shadow-xl"
                       />
                       <p className="mt-8 text-2xl font-semibold leading-none text-white tracking-tighter lg:text-3xl">
