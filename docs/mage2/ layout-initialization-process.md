@@ -4,22 +4,22 @@
 
 `View\Layout::*build* = View\Layout\Builder::*build* - once`
 
-1. loadLayoutUpdates - reads layout xml files and DB updates by *current handles*, result in `_updates` array
+1. loadLayoutUpdates - reads layout xml files and DB updates by _current handles_, result in `_updates` array
 
-    * event `layout_load_before`
+   - event `layout_load_before`
 
 1. generateLayoutXml - joins `_updates` into XML string, loads XML object, initiailzes `_elements` = []
 
-    * layout.generateXml
-    * no events
+   - layout.generateXml
+   - no events
 
 1. generateLayoutBlocks - layout.generateElements
 
-    * event `layout_generate_blocks_before`
-    * readerPool->interpret - every reader checks for matching xml node name (attribute, body, head etc.), prepares page structure 
-    * generatorPool->process
-    * add top-level element as outputElement. default "root"
-    * event `layout_generate_blocks_after`
+   - event `layout_generate_blocks_before`
+   - readerPool->interpret - every reader checks for matching xml node name (attribute, body, head etc.), prepares page structure
+   - generatorPool->process
+   - add top-level element as outputElement. default "root"
+   - event `layout_generate_blocks_after`
 
 ```
 builder.generateLayoutBlocks -> layout.generateElements
@@ -58,7 +58,7 @@ When XML object is created from string XML updates, this is a good place to exam
 ## Determine how HTML output is rendered.
 
 First external code calls layout.addOutputElement(name) to register top level elements for output generation.
-When layout.*getOutput* is called, it renders each outputElement.
+When layout._getOutput_ is called, it renders each outputElement.
 
 - `View\Layout::getOutput`
 - for every registered `_output` element
@@ -168,18 +168,20 @@ Same as layout plus:
 - `<theme_dir>/<Namespace>_<Module>/layouts.xml`
 
 - base:
-  * empty
+
+  - empty
 
 - frontend:
-  * 1column - extends empty
-  * 2columns-left - extends 1column
-  * 2columns-right - same as 2columns-left
-  * 3columns - same as 2columns-left
+
+  - 1column - extends empty
+  - 2columns-left - extends 1column
+  - 2columns-right - same as 2columns-left
+  - 3columns - same as 2columns-left
 
 - adminhtml:
-  * admin-empty
-  * admin-1column
-  * admin-2columns-left
+  - admin-empty
+  - admin-1column
+  - admin-2columns-left
 
 ### page_layout.xsd
 
@@ -201,32 +203,31 @@ Only containers
 - layout.build
 - View\Layout\Builder.build:
 
-    * loadLayoutUpdates
-    * generateLayoutXml
-    * generateLayoutBlocks
-
+  - loadLayoutUpdates
+  - generateLayoutXml
+  - generateLayoutBlocks
 
 - create result page - adds default handles
 - page builder.build
 - all normal layout XML is collected and is about to create blocks
 - custom step before generating layout blocks
 
-
 ### page result.renderResult:
+
 - `View\Result\PageFactory.create`
 - `View\Result\Page::addDefaultHandle` - `default`, `$fullActionName`
 
 - `View\Page\Config.publicBuild = build`
 - `View\Page\Builder.build - extends View\Layout\Builder, custom readPageLayout on step generateLayoutBlocks`
 
-    * (inherit) loadLayoutUpdates
-    * (inherit) generateLayoutXml
-    * `generateLayoutBlocks - additionally *readPageLayout*`
+  - (inherit) loadLayoutUpdates
+  - (inherit) generateLayoutXml
+  - `generateLayoutBlocks - additionally *readPageLayout*`
 
-        + right before creating actual blocks, reads and merges page layout xml files
-        + new instance of `View\Model\Layout\Merge::load handles = '1column' -- uses subDir 'page_layout'`
-        + `*interprets* found page nodes - schedules blocks. page layout instructions (root page template) are interpreted before others
-        + `original generateLayoutBlocks *interprets*, then runs *generators*`
+    - right before creating actual blocks, reads and merges page layout xml files
+    - new instance of `View\Model\Layout\Merge::load handles = '1column' -- uses subDir 'page_layout'`
+    - `_interprets_ found page nodes - schedules blocks. page layout instructions (root page template) are interpreted before others
+    - `original generateLayoutBlocks *interprets*, then runs *generators*`
 
 - `check View\Page\Config.pageLayout, e.g. "1column"`
 - adds default body classes - `$fullActionName`, `page-layout-$layout`
@@ -234,13 +235,13 @@ Only containers
 - `assigns vars 'requireJs', 'headContent', 'headAdditional', 'htmlAttributes', 'headAttributes', 'bodyAttributes', 'loaderIcon'`
 - `layout.getOutput -- already built`
 - `renderPage`
-    * `result.template defined via app/etc/di.xml`
-    * `include Magento_Theme::root.phtml`
-
+  - `result.template defined via app/etc/di.xml`
+  - `include Magento_Theme::root.phtml`
 
 ### In your custom controller don't forget to add entity-specific IDs:
 
 `$page->addPageLayoutHandles(['id' => $category->getId()]);`
+
 ```
 - adds handle `$fullActionName_$param_$value` like `catalog_category_view_id_17`
 - informs full page cache of *entity specific page* `\Magento\Framework\View\EntitySpecificHandlesList::addHandle`
@@ -251,7 +252,6 @@ Only containers
 
     * `\Magento\PageCache\Observer\ProcessLayoutRenderElement::_wrapEsi` - exclude entity-specific handles from ESI URL
 ```
-
 
 `View\Layout\Builder.build`
 
@@ -274,7 +274,7 @@ Only containers
 `Collector\Base - Source of base files introduced by modules`
 
 - `view/base/, view/{$area}/`
-`Collector\Override\Base - Source of view files that explicitly override base files introduced by modules`
+  `Collector\Override\Base - Source of view files that explicitly override base files introduced by modules`
 
 - `theme/{$namespace}_{$module}/`
 
@@ -309,19 +309,19 @@ Only containers
 - `View\Design\FileResolution\Fallback\Resolver\Simple.resolve`
 - `View\Design\Fallback\RulePool.getRule` - by type: file, locale file, template file
 
-  *File fallback rule*:
+  _File fallback rule_:
+
   - when missing 'module_name':
-    * <theme_dir>
+    - `<theme_dir>`
   - when set 'module_name':
-    * `<theme_dir>/<module_name>/templates`
-    * `<module_dir>/view/<area_code>/templates`
-    * `<module_dir>/view/base/templates`
+    - `<theme_dir>/<module_name>/templates`
+    - `<module_dir>/view/<area_code>/templates`
+    - `<module_dir>/view/base/templates`
 
 - View\Design\FileResolution\Fallback\Resolver\Simple::resolveFile(fileRule)
 - search file in each directory
 
 ### How do you identify which exact layout.xml file is processed in a given scope?
-
 
 ## How does Magento treat layout XML files with the same names in different modules?
 
@@ -340,28 +340,32 @@ view files that belong to modules, output of which is prohibited
 
 - customized layout builder and page builders - automatically init messages block
 - custom parent `\Magento\Backend\Block\AbstractBlock`
-  * auto inject AuthorizationInterface
+
+  - auto inject AuthorizationInterface
 
 - custom parent `\Magento\Backend\Block\Template`:
-  * available some properties - authorization, mathRandom, backendSession, formKey, class nameBuilder
-  * event `adminhtml_block_html_before` - fired only when non-cached render.
+
+  - available some properties - authorization, mathRandom, backendSession, formKey, class nameBuilder
+  - event `adminhtml_block_html_before` - fired only when non-cached render.
     To compare, event `view_block_abstract_to_html_after` fires even when block loaded from cache
 
 - customized "block" layout reader (runs interpret) -- reads "acl" block attribute
 - customzied "block" layout generator - default block `class=Magento\Backend\Block\Template`
 - controller result object with additional methods:
-  * setActiveMenu
-  * addBreadcrumb
-  * addContent(block) - moves to 'content'
-  * addLeft(block)
-  * addJs
-  * moveBlockToContainer
+  - setActiveMenu
+  - addBreadcrumb
+  - addContent(block) - moves to 'content'
+  - addLeft(block)
+  - addJs
+  - moveBlockToContainer
 
 ### What differences exist for layout initialization for the admin scope?
 
-*Custom layout and page builders* - automatically initializes message block from message manager:
+_Custom layout and page builders_ - automatically initializes message block from message manager:
 `\Magento\Backend\Model\View\Layout\Builder` and `\Magento\Backend\Model\View\Page\Builder`:
+
 - afterGenerateBlock - called in the end of generateLayoutBlocks, the end of generation - `layout->initMessages()`
 - getBlock('messages') or create new one
 - addMessages from Message\ManagerInterface
 - addStorageType('default')
+
