@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[9625],{5579:e=>{e.exports=JSON.parse('{"title":"MySQL","description":"My config .tmux","slug":"/category/mysql","permalink":"/docs/category/mysql","navigation":{"previous":{"title":"Database","permalink":"/docs/category/database"},"next":{"title":"Replication","permalink":"/docs/database/mysql/Replication"}}}')}}]);
