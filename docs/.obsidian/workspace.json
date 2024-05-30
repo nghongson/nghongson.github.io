@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vim/Cheat Sheet.md",
+                "file": "intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vim/Cheat Sheet.md",
+                "file": "intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vim/Cheat Sheet.md",
+                "file": "intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vim/Cheat Sheet.md"
+                "file": "intro.md"
               }
             }
           },
@@ -157,9 +157,9 @@
   },
   "active": "d282734f7422f734",
   "lastOpenFiles": [
+    "vim/Cheat Sheet.md",
     "Pasted image 20240530083507.png",
     "Pasted image 20240530020726.png",
-    "vim/Cheat Sheet.md",
     "microservices/basic.md",
     "mage2/ layout-initialization-process.md",
     "mage2/setup.md",

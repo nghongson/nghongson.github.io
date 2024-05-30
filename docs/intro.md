@@ -4,6 +4,9 @@ sidebar_position: 1
 
 # Docs
 
-Let's discover.
-
-## Getting Started
+This docs help me saving and systematically reminding of the ideas, inspirations, insights, and connections:
+- Programming 
+- Software Architect 
+- Vim 
+- Linux 
+- ...
