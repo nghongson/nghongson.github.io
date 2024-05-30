@@ -11,3 +11,13 @@ flowchart TD
     B ---->|No| E[End]
 ```
 
+```mermaid
+flowchart LR
+Start --> Stop
+```
+
+```mermaid
+flowchart LR
+Start --> Stop
+```
+
