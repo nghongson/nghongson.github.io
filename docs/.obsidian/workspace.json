@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "architect/cookies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c1e5ac8ef702ddd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "tasks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,8 +169,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "c863dbbba86561be",
+  "active": "c1e5ac8ef702ddd6",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-05-30 20.12.56.excalidraw.md",
+    "architect/cookies.md",
+    "Excalidraw",
+    "tasks.md",
     "server/linux/sed.md",
     "server/linux/awk.md",
     "server/linux/Hardware info.md",
@@ -169,7 +186,6 @@
     "architect/12factors.md",
     "architect/asycnhronous.md",
     "architect/background-process.md",
-    "architect/cookies.md",
     "architect/refactoring.md",
     "mage2/php/php-composer.md",
     "mage2/php",
@@ -188,12 +204,9 @@
     "mage2/setup.md",
     "server/kubernetes/Kubernetes vs Docker.md",
     "mage2/setup.md~",
-    "server/kubernetes/docker-to-kubernetes.md",
-    "vim/vim-mode.md",
     "books",
     "Pasted image 20240530015656.png",
     "Pasted image 20240530015604.png",
-    "Excalidraw",
     "microservices/Event-Driven Systems",
     "nodejs/_category_.json~",
     "nodejs/_category_.json",
