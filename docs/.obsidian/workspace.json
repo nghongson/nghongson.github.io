@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "intro.md",
+                "file": "golang/SOLID Golang.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "intro.md",
+                "file": "golang/SOLID Golang.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "intro.md",
+                "file": "golang/SOLID Golang.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "intro.md"
+                "file": "golang/SOLID Golang.md"
               }
             }
           },
@@ -157,6 +157,24 @@
   },
   "active": "d282734f7422f734",
   "lastOpenFiles": [
+    "architect/SOLID.md",
+    "golang/SOLID Golang.md",
+    "architect/KISS.md",
+    "architect/session.md",
+    "architect/12factors.md",
+    "architect/asycnhronous.md",
+    "architect/background-process.md",
+    "architect/cookies.md",
+    "architect/refactoring.md",
+    "mage2/php/php-composer.md",
+    "mage2/php",
+    "mage2/php/php-caching.md",
+    "mage2/php/php-batch.md",
+    "mage2/php/php-autoload.md",
+    "architect/api/GraphQL.md",
+    "intro.md",
+    "architect/api",
+    "ReactNative",
     "vim/Cheat Sheet.md",
     "Pasted image 20240530083507.png",
     "Pasted image 20240530020726.png",
@@ -171,29 +189,13 @@
     "database/mysql/Replication.md",
     "database/mysql/how-to-optimize-MySQL.md",
     "workflow/tmux.md",
-    "workflow/dotfiles.md",
-    "workflow/tmux-workflow.md",
-    "tasks.md",
-    "vim/help.md",
-    "Pasted image 20240530015656.png.md",
-    "books/head-first-design-patterns.pdf.md",
-    "books.md",
     "books",
     "Pasted image 20240530015656.png",
     "Pasted image 20240530015604.png",
-    "vim/register.md",
-    "vim/neovim.md",
-    "vim/buffers.md",
-    "architect/GraphQL.md",
-    "architect/cookies.md",
-    "architect/clean-code.md",
-    "architect/background-process.md",
     "Excalidraw",
     "microservices/Event-Driven Systems",
     "nodejs/_category_.json~",
     "nodejs/_category_.json",
-    "nodejs/index.md~",
-    "nextjs",
-    "golang"
+    "nodejs/index.md~"
   ]
 }
