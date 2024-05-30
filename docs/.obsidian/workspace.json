@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "server/linux/Hardware info.md",
+                "file": "server/linux/sed.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "server/linux/Hardware info.md",
+                "file": "server/linux/sed.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "server/linux/Hardware info.md",
+                "file": "server/linux/sed.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "server/linux/Hardware info.md"
+                "file": "server/linux/sed.md"
               }
             }
           },
@@ -157,8 +157,9 @@
   },
   "active": "d282734f7422f734",
   "lastOpenFiles": [
-    "golang/SOLID Golang.md",
+    "server/linux/awk.md",
     "server/linux/Hardware info.md",
+    "golang/SOLID Golang.md",
     "server/linux/system-trace.md",
     "architect/SOLID.md",
     "architect/KISS.md",
@@ -188,7 +189,6 @@
     "server/kubernetes/docker-to-kubernetes.md",
     "vim/vim-mode.md",
     "vim/mapping.md",
-    "database/mysql/Replication.md",
     "books",
     "Pasted image 20240530015656.png",
     "Pasted image 20240530015604.png",
