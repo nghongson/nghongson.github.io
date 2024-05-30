@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks.md",
+                "file": "architect/HTTP messages.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tasks.md",
+                "file": "architect/HTTP messages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tasks.md",
+                "file": "architect/HTTP messages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tasks.md"
+                "file": "architect/HTTP messages.md"
               }
             }
           },
@@ -171,10 +171,13 @@
   },
   "active": "c1e5ac8ef702ddd6",
   "lastOpenFiles": [
+    "Pasted image 20240530204107.png",
+    "Pasted image 20240530204050.png",
+    "ref.md",
+    "tasks.md",
     "Excalidraw/Drawing 2024-05-30 20.12.56.excalidraw.md",
     "architect/cookies.md",
     "Excalidraw",
-    "tasks.md",
     "server/linux/sed.md",
     "server/linux/awk.md",
     "server/linux/Hardware info.md",
@@ -201,8 +204,6 @@
     "Pasted image 20240530020726.png",
     "microservices/basic.md",
     "mage2/ layout-initialization-process.md",
-    "mage2/setup.md",
-    "server/kubernetes/Kubernetes vs Docker.md",
     "mage2/setup.md~",
     "books",
     "Pasted image 20240530015656.png",
