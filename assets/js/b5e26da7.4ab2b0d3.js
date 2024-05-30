@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[8636],{2539:e=>{e.exports=JSON.parse('{"title":"Linux","description":"Linux","slug":"/category/linux","permalink":"/docs/category/linux","navigation":{"previous":{"title":"Server","permalink":"/docs/category/server"},"next":{"title":"AWK command","permalink":"/docs/server/linux/awk"}}}')}}]);
