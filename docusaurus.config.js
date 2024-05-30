@@ -26,7 +26,6 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-
   plugins: [
     async function tailwindPlugin(context, options) {
       return {
@@ -62,7 +61,7 @@ const config = {
       }),
     ],
   ],
-
+  themes: ["@docusaurus/theme-mermaid"],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -96,6 +95,7 @@ const config = {
       },
     }),
   markdown: {
+    mermaid: true,
     mdx1Compat: {
       comments: true,
       admonitions: true,
