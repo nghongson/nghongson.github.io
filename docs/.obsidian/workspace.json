@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mage2/setup.md",
+                "file": "microservices/basic.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mage2/setup.md",
+                "file": "microservices/basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mage2/setup.md",
+                "file": "microservices/basic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mage2/setup.md"
+                "file": "microservices/basic.md"
               }
             }
           },
@@ -137,8 +137,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -158,6 +157,8 @@
   },
   "active": "d282734f7422f734",
   "lastOpenFiles": [
+    "mage2/ layout-initialization-process.md",
+    "mage2/setup.md",
     "server/kubernetes/Kubernetes vs Docker.md",
     "mage2/setup.md~",
     "server/kubernetes/docker-to-kubernetes.md",
@@ -173,7 +174,6 @@
     "tasks.md",
     "vim/help.md",
     "Pasted image 20240530015656.png.md",
-    "mage2/setup.md",
     "books/head-first-design-patterns.pdf.md",
     "books.md",
     "books",

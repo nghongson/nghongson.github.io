@@ -7,26 +7,6 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
 import styles from "./index.module.css";
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            My Docs ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -34,20 +14,6 @@ export default function Home(): JSX.Element {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
-      <header className="bg-blue-500">
-        <div className="container mx-auto text-center py-24">
-          <h1 className="text-4xl font-bold text-white">Tailwind</h1>
-          <div className="py-10">
-            <Link
-              className="bg-white rounded-md text-gray-500 px-4 py-2"
-              to="/docs/intro"
-            >
-              Docusaurus Tutorial - 5min ⏱️
-            </Link>
-          </div>
-        </div>
-      </header>
       <main>
         <div className="overflow-y-auto sm:p-0 pt-4 pr-4 pb-20 pl-4 bg-gray-800">
           <div className="flex justify-center items-end text-center min-h-screen sm:block">
@@ -61,11 +27,11 @@ export default function Home(): JSX.Element {
                   <div className="mt-4 mr-auto mb-4 ml-auto bg-gray-900 max-w-lg">
                     <div className="flex flex-col items-center pt-6 pr-6 pb-6 pl-6">
                       <img
-                        src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                        src={require("@site/static/img/leonguyen.jpg").default}
                         className="flex-shrink-0 object-cover object-center btn- flex w-16 h-16 mr-auto -mb-8 ml-auto rounded-full shadow-xl"
                       />
                       <p className="mt-8 text-2xl font-semibold leading-none text-white tracking-tighter lg:text-3xl">
-                        Mark Xenon
+                        Leo Nguyen
                       </p>
                       <p className="mt-3 text-base leading-relaxed text-center text-gray-200">
                         I am a fullstack software developer with ReactJS for
@@ -87,7 +53,6 @@ export default function Home(): JSX.Element {
             </div>
           </div>
         </div>
-        <HomepageFeatures />
       </main>
     </Layout>
   );
