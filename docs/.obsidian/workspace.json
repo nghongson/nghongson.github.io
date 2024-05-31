@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mage2/documents-references.md",
+                "file": "tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mage2/documents-references.md",
+                "file": "tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mage2/documents-references.md",
+                "file": "tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mage2/documents-references.md"
+                "file": "tasks.md"
               }
             }
           },
@@ -138,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -158,6 +158,12 @@
   },
   "active": "d282734f7422f734",
   "lastOpenFiles": [
+    "mage2/Asynchronous.md",
+    "mage2/Image Optimize.md",
+    "architect/design-patterns/Abstract Factory.md",
+    "mage2/Docker Image.md",
+    "web3",
+    "mage2/documents-references.md",
     "nodejs/Authentication.md",
     "nextjs/ref.md",
     "database/mysql/Replication.md~",
@@ -188,16 +194,10 @@
     "Excalidraw/Drawing 2024-05-30 20.12.56.excalidraw.md",
     "Excalidraw",
     "server/linux/sed.md",
-    "server/linux/awk.md",
-    "server/linux/Hardware info.md",
-    "golang/SOLID Golang.md",
-    "server/linux/system-trace.md",
-    "architect/SOLID.md",
     "mage2/php",
     "architect/api",
     "ReactNative",
     "mage2/setup.md~",
-    "books",
     "Pasted image 20240530015656.png",
     "Pasted image 20240530015604.png"
   ]
