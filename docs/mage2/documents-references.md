@@ -10,4 +10,5 @@ sidebar_position: 1
 - [Mage2 Exam Notes](https://github.com/magento-notes/magento2-exam-notes)
 - [Mage2 Exam](https://github.com/roma-glushko/magento2-dev-plus-exam)
 - [Swiftotter Magento 2 Study Guide](https://swiftotter.com/technical/certifications/prep-guide-for-adobe-expert-developer)
+- [Magento Kubernetes - A complete guide](https://clickandmortar.github.io/magento-kubernetes/)
 - [Modules](https://developer.adobe.com/commerce/php/module-reference/)

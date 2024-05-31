@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nextjs/ref.md",
+                "file": "mage2/documents-references.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nextjs/ref.md",
+                "file": "mage2/documents-references.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nextjs/ref.md",
+                "file": "mage2/documents-references.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nextjs/ref.md"
+                "file": "mage2/documents-references.md"
               }
             }
           },
@@ -156,8 +156,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "49e48ee3fbfc7f1c",
+  "active": "d282734f7422f734",
   "lastOpenFiles": [
+    "nodejs/Authentication.md",
+    "nextjs/ref.md",
     "database/mysql/Replication.md~",
     "nextjs/api-route.md~",
     "nextjs/api-route.md",
@@ -183,7 +185,6 @@
     "Pasted image 20240530204107.png",
     "Pasted image 20240530204050.png",
     "architect/HTTP messages.md",
-    "nextjs/ref.md",
     "Excalidraw/Drawing 2024-05-30 20.12.56.excalidraw.md",
     "Excalidraw",
     "server/linux/sed.md",
@@ -198,7 +199,6 @@
     "mage2/setup.md~",
     "books",
     "Pasted image 20240530015656.png",
-    "Pasted image 20240530015604.png",
-    "microservices/Event-Driven Systems"
+    "Pasted image 20240530015604.png"
   ]
 }
