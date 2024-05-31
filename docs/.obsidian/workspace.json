@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tasks.md",
+                "file": "nextjs/cache.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tasks.md",
+                "file": "nextjs/cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tasks.md",
+                "file": "nextjs/cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tasks.md"
+                "file": "nextjs/cache.md"
               }
             }
           },
@@ -158,6 +158,9 @@
   },
   "active": "d282734f7422f734",
   "lastOpenFiles": [
+    "nextjs/Route Handler.md",
+    "tasks.md",
+    "nextjs/middleware.md~",
     "mage2/Asynchronous.md",
     "mage2/Image Optimize.md",
     "architect/design-patterns/Abstract Factory.md",
@@ -169,7 +172,6 @@
     "database/mysql/Replication.md~",
     "nextjs/api-route.md~",
     "nextjs/api-route.md",
-    "nextjs/middleware.md~",
     "nextjs/middleware.md",
     "nextjs/middleware",
     "nextjs/cache.md",
@@ -184,7 +186,6 @@
     "vim/help.md",
     "vim/Buffers.md",
     "vim/Neo Vim.md",
-    "tasks.md",
     "Pasted image 20240530020726.png",
     "Pasted image 20240530083507.png",
     "architect/cookies.md",
@@ -193,7 +194,6 @@
     "architect/HTTP messages.md",
     "Excalidraw/Drawing 2024-05-30 20.12.56.excalidraw.md",
     "Excalidraw",
-    "server/linux/sed.md",
     "mage2/php",
     "architect/api",
     "ReactNative",

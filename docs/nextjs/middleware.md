@@ -1,5 +1,21 @@
 # Middleware
 
+## Use Cases
+
+- Authentication and Authorization
+- Server-Side Redirects: Redirect users at the server level based on certain conditions (e.g., locale, user role).
+- Path Rewriting: Support A/B testing, feature rollouts, or legacy paths by dynamically rewriting paths to API routes or pages based on request properties.
+- Bot Detection: Protect your resources by detecting and blocking bot traffic.
+- Logging and Analytics: Capture and analyze request data for insights before processing by the page or API.
+- Feature Flagging: Enable or disable features dynamically for seamless feature rollouts or testing.
+
+## middleware may not be the optimal approach
+
+- Complex Data Fetching and Manipulation: Middleware is not designed for direct data fetching or manipulation, this should be done within Route Handlers or server-side utilities instead.
+- Heavy Computational Tasks
+- Extensive Session Management (Middleware should just management basic session)
+- Direct Database Operations: Performing direct database operations within Middleware is not recommended. Database interactions should done within Route Handlers or server-side utilities.
+
 ### Example middleware.ts
 
 ```typescript
