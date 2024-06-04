@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architect/api/Graphql vs RESTful.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "018dc6b17a861e90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architect/api/gRPC.md",
+                "file": "architect/Refactoring/index.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architect/api/gRPC.md",
+                "file": "architect/Refactoring/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architect/api/gRPC.md",
+                "file": "architect/Refactoring/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architect/api/gRPC.md"
+                "file": "architect/Refactoring/index.md"
               }
             }
           },
@@ -169,19 +156,25 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "018dc6b17a861e90",
+  "active": "49e48ee3fbfc7f1c",
   "lastOpenFiles": [
+    "architect/Refactoring",
     "architect/KISS Principle.md",
+    "architect/design-patterns/Abstract Factory.md",
+    "architect/design-patterns/bridge.md",
+    "architect/design-patterns/adapter.md",
+    "architect/design-patterns/Repository.md",
+    "Excalidraw/Drawing 2024-05-30 20.12.56.excalidraw.md",
+    "architect/api/Graphql vs RESTful.md",
+    "architect/api/gRPC.md",
     "architect/HTTP messages.md",
     "architect/Cookies.md",
     "architect/Clean Code.md",
     "architect/Background Process.md",
     "architect/Asycnhronous.md",
     "architect/Clean Architecture.md",
-    "architect/api/Graphql vs RESTful.md",
     "architect/api/GraphQL.md",
     "tes.md",
-    "architect/api/gRPC.md",
     "Untitled 1.md",
     "nodejs/Orm.md",
     "Untitled.md",
@@ -192,12 +185,6 @@
     "nodejs/Nestjs/Authentication.md",
     "nodejs/Nestjs",
     "nodejs/graphql/resolvers.md",
-    "nextjs/Static Assets.md",
-    "nextjs/Lazy Loading.md",
-    "nextjs/cache.md",
-    "nextjs/API Routes.md",
-    "nextjs/Route Handler.md",
-    "tasks.md",
     "nextjs/middleware.md~",
     "web3",
     "database/mysql/Replication.md~",
