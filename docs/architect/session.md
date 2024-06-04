@@ -1,7 +1,8 @@
 # Session 
 ## What is session?
 ## Session & Cookies
-
+Session server side
+Cookie client side (browser)
 ## Session-Based vs. Token-Based Authentication
 
 ### Express session
@@ -14,7 +15,7 @@ app.use(session({
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: true }
+  cookie: { secure: true },
 }))
 app.use(function (req, res, next) {
   if (!req.session.views) {
@@ -30,7 +31,35 @@ app.use(function (req, res, next) {
   next()
 })
 ```
+Redis
+```
+npm install redis connect-redis express-session
 
+import RedisStore from "connect-redis"
+import session from "express-session"
+import {createClient} from "redis"
+
+// Initialize client.
+let redisClient = createClient()
+redisClient.connect().catch(console.error)
+
+// Initialize store.
+let redisStore = new RedisStore({
+  client: redisClient,
+  prefix: "myapp:",
+})
+
+// Initialize session storage.
+app.use(
+  session({
+    store: redisStore,
+    resave: false, // required: force lightweight session keep alive (touch)
+    saveUninitialized: false, // recommended: only save session when data exists
+    secret: "keyboard cat",
+  }),
+)
+
+```
 ### NestJs
 ```
 import * as session from 'express-session';
@@ -40,6 +69,7 @@ app.use(
     secret: 'my-secret',
     resave: false,
     saveUninitialized: false,
+    store: new redisStore({...}),
   }),
 );
 ```
@@ -233,3 +263,7 @@ store := session.New(session.Config{
 	Storage: storage,
 })
 ```
+
+## Ref:
+- [session](http://www.senchalabs.org/connect/session.html)
+- 
