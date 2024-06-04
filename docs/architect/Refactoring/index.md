@@ -5,6 +5,27 @@ sidebar_position: 6
 # Refactoring Code
 
 Refactoring is a systematic process of improving codewithout creating new functionality that can transforma mess into clean code and simple design.
-- Dirty Code
 - Clean Code
+- Code Smells
 - Refactoring Process
+
+## Technical debt
+
+“Technical debt” in regards to unclean code was originally suggested by Ward Cunningham.
+If you get a loan from a bank, this allows you to make purchases faster. You pay extra for expediting the process - you don’t just pay off the principal, but also the additional interest on the loan. Needless to say, you can even rack up so much interest that the amount of interest exceeds your total income, making full repayment impossible.
+
+The same thing can happen with code. You can temporarily speed up without writing tests for new features, but this will gradually slow your progress every day until you eventually pay off the debt by writing tests.
+
+### Causes of technical debt
+- Business pressure
+- Lack of understanding of the consequences of technical debt
+- Failing to combat the strict coherence of components
+- Lack of tests
+- Lack of documentation
+- Lack of interaction between team members
+- Long-term simultaneous development in several branches
+- Delayed refactoring
+- Lack of compliance monitoring
+- Incompetence
+
+ 
