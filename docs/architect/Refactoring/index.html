@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.3.2">
 <title data-rh="true">Refactoring Code | Leo Nguyen</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://nghongson.github.io/docs/architect/Refactoring/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Refactoring Code | Leo Nguyen"><meta data-rh="true" name="description" content="Refactoring is a systematic process of improving codewithout creating new functionality that can transforma mess into clean code and simple design."><meta data-rh="true" property="og:description" content="Refactoring is a systematic process of improving codewithout creating new functionality that can transforma mess into clean code and simple design."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://nghongson.github.io/docs/architect/Refactoring/"><link data-rh="true" rel="alternate" href="https://nghongson.github.io/docs/architect/Refactoring/" hreflang="en"><link data-rh="true" rel="alternate" href="https://nghongson.github.io/docs/architect/Refactoring/" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Leo Nguyen RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Leo Nguyen Atom Feed"><link rel="stylesheet" href="/assets/css/styles.b16a2342.css">
-<script src="/assets/js/runtime~main.60ed43e8.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c6c4b285.js" defer="defer"></script>
 <script src="/assets/js/main.97456af0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,36 +22,30 @@ If you get a loan from a bank, this allows you to make purchases faster. You pay
 <p>The same thing can happen with code. You can temporarily speed up without writing tests for new features, but this will gradually slow your progress every day until you eventually pay off the debt by writing tests.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="Causes-of-technical-debt">Causes of technical debt<a href="#Causes-of-technical-debt" class="hash-link" aria-label="Direct link to Causes of technical debt" title="Direct link to Causes of technical debt">​</a></h3>
 <ul>
-<li>
-<p>Business pressure</p>
-</li>
-<li>
-<p>Lack of understanding of the consequences of technical debt</p>
-</li>
-<li>
-<p>Failing to combat the strict coherence of components</p>
-</li>
-<li>
-<p>Lack of tests</p>
-</li>
-<li>
-<p>Lack of documentation</p>
-</li>
-<li>
-<p>Lack of interaction between team members</p>
-</li>
-<li>
-<p>Long-term simultaneous development in several branches</p>
-</li>
-<li>
-<p>Delayed refactoring</p>
-</li>
-<li>
-<p>Lack of compliance monitoring</p>
-</li>
-<li>
-<p>Incompetence</p>
-</li>
-</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/category/architect"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Architect</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/architect/12factors"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">The Twelve Factors</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#Technical-debt" class="table-of-contents__link toc-highlight">Technical debt</a><ul><li><a href="#Causes-of-technical-debt" class="table-of-contents__link toc-highlight">Causes of technical debt</a></li></ul></li></ul></div></div></div></div></main></div></div></div></div>
+<li>Business pressure</li>
+<li>Lack of understanding of the consequences of technical debt</li>
+<li>Failing to combat the strict coherence of components</li>
+<li>Lack of tests</li>
+<li>Lack of documentation</li>
+<li>Lack of interaction between team members</li>
+<li>Long-term simultaneous development in several branches</li>
+<li>Delayed refactoring</li>
+<li>Lack of compliance monitoring</li>
+<li>Incompetence</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="When-to-refactor">When to refactor<a href="#When-to-refactor" class="hash-link" aria-label="Direct link to When to refactor" title="Direct link to When to refactor">​</a></h2>
+<p><strong>Rule of Three</strong></p>
+<ol>
+<li>When you’re doing something for the first time, just get it done.</li>
+<li>When you’re doing something similar for the second time, cringe at having to repeat but do the same thing anyway.</li>
+<li>When you’re doing something for the third time, start refactoring.
+<strong>When adding a feature</strong></li>
+<li>Refactoring helps you understand other people’s code</li>
+<li>Refactoring makes it easier to add new features
+<strong>When fixing a bug</strong></li>
+<li>Proactive refactoring as it eliminates the need for special refactoring tasks later
+During a code review</li>
+<li>The code review may be the last chance to tidy up the code before it becomes available to the public.</li>
+</ol></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/category/architect"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Architect</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/architect/12factors"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">The Twelve Factors</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#Technical-debt" class="table-of-contents__link toc-highlight">Technical debt</a><ul><li><a href="#Causes-of-technical-debt" class="table-of-contents__link toc-highlight">Causes of technical debt</a></li></ul></li><li><a href="#When-to-refactor" class="table-of-contents__link toc-highlight">When to refactor</a></li></ul></div></div></div></div></main></div></div></div></div>
 </body>
 </html>
