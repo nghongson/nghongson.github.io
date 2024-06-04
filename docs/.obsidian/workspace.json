@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architect/Refactoring/index.md",
+                "file": "architect/session.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architect/Refactoring/index.md",
+                "file": "architect/session.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architect/Refactoring/index.md",
+                "file": "architect/session.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architect/Refactoring/index.md"
+                "file": "architect/session.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "d282734f7422f734",
   "lastOpenFiles": [
+    "architect/Refactoring/index.md",
     "architect/Refactoring/index.md~",
     "architect/Refactoring",
     "architect/KISS Principle.md",
@@ -197,7 +198,6 @@
     "Pasted image 20240530204050.png",
     "Excalidraw",
     "mage2/php",
-    "architect/api",
     "Pasted image 20240530015656.png",
     "Pasted image 20240530015604.png"
   ]
