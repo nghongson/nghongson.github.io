@@ -156,8 +156,9 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "49e48ee3fbfc7f1c",
+  "active": "d282734f7422f734",
   "lastOpenFiles": [
+    "architect/Refactoring/index.md~",
     "architect/Refactoring",
     "architect/KISS Principle.md",
     "architect/design-patterns/Abstract Factory.md",
@@ -197,7 +198,6 @@
     "Excalidraw",
     "mage2/php",
     "architect/api",
-    "ReactNative",
     "Pasted image 20240530015656.png",
     "Pasted image 20240530015604.png"
   ]
