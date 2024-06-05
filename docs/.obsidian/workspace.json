@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vim/Buffers.md",
+                "file": "server/linux/Hardware info.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vim/Buffers.md",
+                "file": "server/linux/Hardware info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vim/Buffers.md",
+                "file": "server/linux/Hardware info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vim/Buffers.md"
+                "file": "server/linux/Hardware info.md"
               }
             }
           },
@@ -156,8 +156,18 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "212fd523df1bb81b",
+  "active": "49e48ee3fbfc7f1c",
   "lastOpenFiles": [
+    "nodejs/Nestjs/Authorization.md",
+    "nodejs/Nestjs/Authentication.md",
+    "nodejs/Typescript/index.md",
+    "architect/Asynchronous.md",
+    "nodejs/Typescript",
+    "Pasted image 20240605112428.png",
+    "architect/Clean Code.md",
+    "architect/Concurrency & Parallelism.md",
+    "architect/Background Process.md",
+    "vim/Buffers.md",
     "vim/Cheat Sheet.md",
     "neovim-cheat-sheet-v0-vmyvqrxi2e4c1.png",
     "golang/SOLID Golang.md",
@@ -167,7 +177,6 @@
     "golang/GORM",
     "nodejs/Nestjs/Repository.md",
     "golang/GoFiber",
-    "nodejs/Nestjs/Authentication.md",
     "architect/d.md",
     "architect/session.md",
     "architect/Refactoring/index.md",
@@ -183,18 +192,10 @@
     "architect/api/gRPC.md",
     "architect/HTTP messages.md",
     "architect/Cookies.md",
-    "architect/Clean Code.md",
-    "architect/Background Process.md",
-    "architect/Asycnhronous.md",
-    "architect/Clean Architecture.md",
-    "architect/api/GraphQL.md",
-    "tes.md",
-    "Untitled 1.md",
     "nodejs/Nestjs",
     "nextjs/middleware.md~",
     "web3",
     "database/mysql/Replication.md~",
-    "nextjs/api-route.md~",
     "Pasted image 20240530020726.png",
     "Pasted image 20240530083507.png",
     "Pasted image 20240530204107.png",
