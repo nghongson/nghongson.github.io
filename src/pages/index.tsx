@@ -21,7 +21,7 @@ export default function Home(): JSX.Element {
             <span className="hidden sm:inline-block sm:align-middle sm:h-screen">
               ​
             </span>
-            <div className="inline-block text-left bg-gray-900 rounded-lg overflow-hidden align-bottom transition-all transform shadow-2xl sm:my-8 sm:align-middle sm:max-w-xl sm:w-full">
+            <div className="inline-block text-left bg-gray-900 rounded-lg overflow-hidden align-bottom transition-all transform shadow-2xl sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full">
               <div className="items-center w-full mr-auto ml-auto relative max-w-7xl md:px-12 lg:px-24">
                 <div className="grid grid-cols-1">
                   <div className="mt-4 mr-auto mb-4 ml-auto bg-gray-900 max-w-lg">
