@@ -22,6 +22,7 @@
     "@docusaurus/preset-classic": "^3.3.2",
     "@docusaurus/theme-mermaid": "^3.3.2",
     "@mdx-js/react": "^3.0.1",
+    "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
     "clsx": "^2.1.1",
     "daisyui": "^4.11.1",

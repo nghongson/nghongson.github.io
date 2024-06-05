@@ -48,33 +48,5 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-lexend font-bold text-gray-900 dark:text-gray-700;
-}
-
-h1 {
-  @apply text-3xl dark:text-gray-800 2xl:text-[32px] 4xl:text-4xl;
-}
-
-h2 {
-  @apply text-2xl dark:text-gray-800 2xl:text-[26px] 4xl:text-3xl;
-}
-
-h3 {
-  @apply text-xl 2xl:text-[22px] 4xl:text-2xl;
-}
-
-h4 {
-  @apply text-lg 2xl:xl:text-xl;
-}
-
-h5 {
-  @apply text-base 2xl:text-lg;
-}
-
-h6 {
-  @apply text-sm 2xl:text-base;
-}
-
-q {
-  @apply text-lg;
+  @apply font-bold text-gray-900 dark:text-gray-700;
 }
