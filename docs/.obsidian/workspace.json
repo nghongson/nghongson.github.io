@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vim/Cheat Sheet.md",
+                "file": "vim/Buffers.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vim/Cheat Sheet.md",
+                "file": "vim/Buffers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vim/Cheat Sheet.md",
+                "file": "vim/Buffers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vim/Cheat Sheet.md"
+                "file": "vim/Buffers.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "212fd523df1bb81b",
   "lastOpenFiles": [
+    "vim/Cheat Sheet.md",
     "neovim-cheat-sheet-v0-vmyvqrxi2e4c1.png",
     "golang/SOLID Golang.md",
     "golang/GORM/index.md",
