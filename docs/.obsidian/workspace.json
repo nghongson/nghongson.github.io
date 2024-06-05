@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "golang/SOLID Golang.md",
+                "file": "vim/Cheat Sheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "golang/SOLID Golang.md",
+                "file": "vim/Cheat Sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "golang/SOLID Golang.md",
+                "file": "vim/Cheat Sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "golang/SOLID Golang.md"
+                "file": "vim/Cheat Sheet.md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "212fd523df1bb81b",
   "lastOpenFiles": [
+    "neovim-cheat-sheet-v0-vmyvqrxi2e4c1.png",
+    "golang/SOLID Golang.md",
     "golang/GORM/index.md",
     "golang/Graphql",
     "golang/GoFiber/index.md",
@@ -187,7 +189,6 @@
     "architect/api/GraphQL.md",
     "tes.md",
     "Untitled 1.md",
-    "nodejs/Orm.md",
     "nodejs/Nestjs",
     "nextjs/middleware.md~",
     "web3",
