@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
                         className="flex-shrink-0 object-cover object-center btn- flex w-16 h-16 mr-auto -mb-8 ml-auto rounded-full shadow-xl"
                       />
                       <p className="mt-8 text-2xl font-semibold leading-none text-white tracking-tighter lg:text-3xl">
-                        Hello, my name's Leo Nguyen.
+                        Hello,My name's Leo Nguyen.
                       </p>
                       <p className="mt-3 text-base leading-relaxed text-center text-gray-200">
                         I'm a backend developer.
@@ -69,7 +69,7 @@ export default function Home(): JSX.Element {
                       </p>
                       <div className="w-full mt-6">
                         <a
-                          href="mailto:webmaster@example.com"
+                          href="mailto:nghongson.leo@gmail.com"
                           className="flex text-center items-center justify-center w-full pt-4 pr-10 pb-4 pl-10 text-base
                     font-medium text-white bg-indigo-600 rounded-xl transition duration-500 ease-in-out transform
                     hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
