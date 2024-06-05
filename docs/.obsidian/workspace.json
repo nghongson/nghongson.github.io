@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "golang/GoFiber/index.md",
+                "file": "golang/SOLID Golang.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "golang/GoFiber/index.md",
+                "file": "golang/SOLID Golang.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "golang/GoFiber/index.md",
+                "file": "golang/SOLID Golang.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "golang/GoFiber/index.md"
+                "file": "golang/SOLID Golang.md"
               }
             }
           },
@@ -158,8 +158,11 @@
   },
   "active": "212fd523df1bb81b",
   "lastOpenFiles": [
-    "nodejs/Nestjs/Repository.md",
+    "golang/GORM/index.md",
+    "golang/Graphql",
     "golang/GoFiber/index.md",
+    "golang/GORM",
+    "nodejs/Nestjs/Repository.md",
     "golang/GoFiber",
     "nodejs/Nestjs/Authentication.md",
     "architect/d.md",
@@ -185,19 +188,15 @@
     "tes.md",
     "Untitled 1.md",
     "nodejs/Orm.md",
-    "Untitled.md",
-    "architect/api/RESTFul.md",
     "nodejs/Nestjs",
     "nextjs/middleware.md~",
     "web3",
     "database/mysql/Replication.md~",
     "nextjs/api-route.md~",
-    "nextjs/middleware",
     "Pasted image 20240530020726.png",
     "Pasted image 20240530083507.png",
     "Pasted image 20240530204107.png",
     "Pasted image 20240530204050.png",
-    "Excalidraw",
     "Pasted image 20240530015656.png",
     "Pasted image 20240530015604.png"
   ]

@@ -11,7 +11,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Wellcome to Leo Nguyen's Documents`}
       description="Description will go into a meta tag in <head />"
     >
       <main>
@@ -34,16 +34,26 @@ export default function Home(): JSX.Element {
                         Leo Nguyen
                       </p>
                       <p className="mt-3 text-base leading-relaxed text-center text-gray-200">
-                        I am a fullstack software developer with ReactJS for
-                        frontend and NodeJS for backend
+                        Hello, my name's Leo Nguyen. I'm a backend developer.
+                        This blog is where I store the documents use when
+                        researching and taking notes to reuse when need:
+                      </p>
+                      <p className="mt-3 text-base leading-relaxed text-center text-gray-200">
+                        <span className="badge badge-accent">
+                          <a href="/docs/category/server">Server</a>
+                        </span>
+                        ,<span className="badge badge-accent">Golang</span>,
+                        <span className="badge badge-accent">Nodejs</span>,
+                        <span className="badge badge-accent">Magento</span>,
                       </p>
                       <div className="w-full mt-6">
                         <a
+                          href="mailto:webmaster@example.com"
                           className="flex text-center items-center justify-center w-full pt-4 pr-10 pb-4 pl-10 text-base
                     font-medium text-white bg-indigo-600 rounded-xl transition duration-500 ease-in-out transform
                     hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         >
-                          Hire me
+                          Contact
                         </a>
                       </div>
                     </div>
