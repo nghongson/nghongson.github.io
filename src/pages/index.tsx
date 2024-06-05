@@ -31,20 +31,41 @@ export default function Home(): JSX.Element {
                         className="flex-shrink-0 object-cover object-center btn- flex w-16 h-16 mr-auto -mb-8 ml-auto rounded-full shadow-xl"
                       />
                       <p className="mt-8 text-2xl font-semibold leading-none text-white tracking-tighter lg:text-3xl">
-                        Leo Nguyen
+                        Hello, my name's Leo Nguyen.
                       </p>
                       <p className="mt-3 text-base leading-relaxed text-center text-gray-200">
-                        Hello, my name's Leo Nguyen. I'm a backend developer.
-                        This blog is where I store the documents use when
-                        researching and taking notes to reuse when need:
+                        I'm a backend developer.
+                      </p>
+                      <p className="mt-3 text-base leading-relaxed text-center text-gray-200">
+                        This is where I keep the documents I use for research
+                        and taking notes, which I can then reuse as needed.
                       </p>
                       <p className="mt-3 text-base leading-relaxed text-center text-gray-200">
                         <span className="badge badge-accent">
                           <a href="/docs/category/server">Server</a>
                         </span>
-                        ,<span className="badge badge-accent">Golang</span>,
-                        <span className="badge badge-accent">Nodejs</span>,
-                        <span className="badge badge-accent">Magento</span>,
+                        ,
+                        <span className="badge badge-accent">
+                          <a href="/docs/category/docker">Docker</a>
+                        </span>
+                        ,
+                        <span className="badge badge-accent">
+                          <a href="/docs/category/golang">Golang</a>
+                        </span>
+                        ,
+                        <span className="badge badge-accent">
+                          <a href="/docs/category/nodejs">Nodejs</a>
+                        </span>
+                        ,
+                        <span className="badge badge-accent">
+                          <a href="/docs/category/mage2">Magento</a>
+                        </span>
+                        ,
+                        <span className="badge badge-accent">
+                          <a href="/docs/category/architect">
+                            Software Architecture
+                          </a>
+                        </span>
                       </p>
                       <div className="w-full mt-6">
                         <a
