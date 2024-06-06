@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodejs/index.md",
+                "file": "nodejs/Node Patch Package.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/index.md",
+                "file": "nodejs/Node Patch Package.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/index.md",
+                "file": "nodejs/Node Patch Package.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/index.md"
+                "file": "nodejs/Node Patch Package.md"
               }
             }
           },
@@ -159,11 +159,12 @@
   },
   "active": "212fd523df1bb81b",
   "lastOpenFiles": [
+    "nodejs/Node.js Application Architecture.md",
+    "nodejs/Node Patch Package.md",
     "nodejs/index.md",
     "intro.md",
     "architect/api/GraphQL.md",
     "nodejs/index.md~",
-    "nodejs/Node.js Architecture.md",
     "nodejs/Node.js Worker Threads.md",
     "nodejs/Callback hell.md",
     "nodejs/Callback hell.md~",
