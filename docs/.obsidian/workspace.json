@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architect/api/Graphql vs RESTful.md",
+                "file": "server/linux/output-input.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architect/api/Graphql vs RESTful.md",
+                "file": "server/linux/output-input.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architect/api/Graphql vs RESTful.md",
+                "file": "server/linux/output-input.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architect/api/Graphql vs RESTful.md"
+                "file": "server/linux/output-input.md"
               }
             }
           },
@@ -172,12 +172,21 @@
   },
   "active": "7977d9751e15240c",
   "lastOpenFiles": [
+    "server/linux/awk.md",
+    "server/linux/commands.md",
+    "server/linux/file-management.md",
+    "server/linux/glob.md",
+    "server/linux/grep.md",
+    "server/linux/sed.md",
+    "server/linux/awk.md~",
+    "microservices/Kafka/index.md",
+    "books.md",
+    "golang/Graphql/GraphQL Server Generator for Go.md",
+    "architect/api/Graphql vs RESTful.md",
     "architect/api/GraphQL Best Practices.md",
     "architect/api/GraphQL Cache.md",
     "architect/api/GraphQL.md",
     "architect/api/Thinking in Graphs.md",
-    "architect/api/Graphql vs RESTful.md",
-    "books.md",
     "intro.md",
     "vim/Cheat Sheet.md",
     "nodejs/Nestjs/middleware.md",
@@ -190,15 +199,7 @@
     "nodejs/Best Practices for Node.js Development.md",
     "nodejs/Process Management.md",
     "nodejs/Logger.md",
-    "nodejs/Nodejs Monitor.md",
     "nodejs/Untitled",
-    "nodejs/Debugging Node.js.md",
-    "nodejs/Profiling Node.js Applications.md",
-    "nodejs/Node.js with WebAssembly.md",
-    "nodejs/Events.md",
-    "nodejs/Streaming.md",
-    "nodejs/Validation.md",
-    "nodejs/Node.js Architecture.md",
     "nodejs/Typescript",
     "Pasted image 20240605112428.png",
     "neovim-cheat-sheet-v0-vmyvqrxi2e4c1.png",
@@ -209,7 +210,6 @@
     "architect/Refactoring",
     "nodejs/Nestjs",
     "nextjs/middleware.md~",
-    "web3",
     "Pasted image 20240530020726.png",
     "Pasted image 20240530083507.png",
     "Pasted image 20240530204107.png",
