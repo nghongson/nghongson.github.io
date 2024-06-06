@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architect/api/GraphQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7977d9751e15240c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "nodejs/index.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,10 +157,13 @@
       "obsidiosaurus:Obsidiosaurus": false
     }
   },
-  "active": "7977d9751e15240c",
+  "active": "212fd523df1bb81b",
   "lastOpenFiles": [
-    "nodejs/Node.js Architecture.md",
     "nodejs/index.md",
+    "intro.md",
+    "architect/api/GraphQL.md",
+    "nodejs/index.md~",
+    "nodejs/Node.js Architecture.md",
     "nodejs/Node.js Worker Threads.md",
     "nodejs/Callback hell.md",
     "nodejs/Callback hell.md~",
@@ -194,15 +184,12 @@
     "architect/api/Graphql vs RESTful.md",
     "architect/api/GraphQL Best Practices.md",
     "architect/api/GraphQL Cache.md",
-    "architect/api/GraphQL.md",
     "architect/api/Thinking in Graphs.md",
-    "intro.md",
     "vim/Cheat Sheet.md",
     "nodejs/Nestjs/middleware.md",
     "nodejs/Nestjs/Injection.md",
     "nodejs/Nestjs/index.md",
     "nodejs/Nestjs/Authentication.md",
-    "nodejs/graphql/resolvers.md",
     "nodejs/Untitled",
     "nodejs/Typescript",
     "Pasted image 20240605112428.png",
@@ -212,7 +199,6 @@
     "golang/GoFiber",
     "architect/Refactoring/index.md~",
     "architect/Refactoring",
-    "nodejs/Nestjs",
     "Pasted image 20240530020726.png",
     "Pasted image 20240530083507.png",
     "Pasted image 20240530204107.png",
