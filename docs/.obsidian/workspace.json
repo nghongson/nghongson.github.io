@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "server/linux/Hardware info.md",
+                "file": "nodejs/Nodejs File system.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "server/linux/Hardware info.md",
+                "file": "nodejs/Nodejs File system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "server/linux/Hardware info.md",
+                "file": "nodejs/Nodejs File system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "server/linux/Hardware info.md"
+                "file": "nodejs/Nodejs File system.md"
               }
             }
           },
@@ -156,46 +156,46 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "49e48ee3fbfc7f1c",
+  "active": "212fd523df1bb81b",
   "lastOpenFiles": [
+    "nodejs/Best Practices for Node.js Development.md",
+    "nodejs/Nodejs File system.md",
+    "nodejs/Process Management.md",
+    "nodejs/Logger.md",
+    "nodejs/Nodejs Monitor.md",
+    "nodejs/Untitled",
+    "nodejs/Debugging Node.js.md",
+    "nodejs/Profiling Node.js Applications.md",
+    "nodejs/Node.js with WebAssembly.md",
+    "nodejs/Events.md",
+    "nodejs/Streaming.md",
+    "nodejs/Validation.md",
+    "nodejs/Node.js Architecture.md",
+    "nodejs/SOLID.md",
+    "nodejs/Nestjs/Injection.md",
+    "nodejs/Nestjs/middleware.md",
     "nodejs/Nestjs/Authorization.md",
     "nodejs/Nestjs/Authentication.md",
+    "nextjs/Middleware.md",
+    "nextjs/Route Handler.md",
+    "nextjs/ref.md",
+    "nextjs/Lazy Loading.md",
+    "nextjs/cache.md",
+    "nextjs/API Routes.md",
+    "server/linux/Hardware info.md",
     "nodejs/Typescript/index.md",
     "architect/Asynchronous.md",
     "nodejs/Typescript",
     "Pasted image 20240605112428.png",
-    "architect/Clean Code.md",
-    "architect/Concurrency & Parallelism.md",
-    "architect/Background Process.md",
-    "vim/Buffers.md",
-    "vim/Cheat Sheet.md",
     "neovim-cheat-sheet-v0-vmyvqrxi2e4c1.png",
-    "golang/SOLID Golang.md",
-    "golang/GORM/index.md",
     "golang/Graphql",
-    "golang/GoFiber/index.md",
     "golang/GORM",
-    "nodejs/Nestjs/Repository.md",
     "golang/GoFiber",
-    "architect/d.md",
-    "architect/session.md",
-    "architect/Refactoring/index.md",
     "architect/Refactoring/index.md~",
     "architect/Refactoring",
-    "architect/KISS Principle.md",
-    "architect/design-patterns/Abstract Factory.md",
-    "architect/design-patterns/bridge.md",
-    "architect/design-patterns/adapter.md",
-    "architect/design-patterns/Repository.md",
-    "Excalidraw/Drawing 2024-05-30 20.12.56.excalidraw.md",
-    "architect/api/Graphql vs RESTful.md",
-    "architect/api/gRPC.md",
-    "architect/HTTP messages.md",
-    "architect/Cookies.md",
     "nodejs/Nestjs",
     "nextjs/middleware.md~",
     "web3",
-    "database/mysql/Replication.md~",
     "Pasted image 20240530020726.png",
     "Pasted image 20240530083507.png",
     "Pasted image 20240530204107.png",
