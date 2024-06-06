@@ -107,3 +107,12 @@ class WritingManager {
 }
 ```
 
+## Open Closed Principle
+Software entities should be open for extension, but closed for modification.
+
+## Liskov Substitution principle
+Objects of a superclass shall be replaceable with objects of its subclasses without breaking the application.
+## Interface segregation principle
+
+## Dependency Inversion Principle
+High level modules should not depend on low level modules; both should depend on abstractions.

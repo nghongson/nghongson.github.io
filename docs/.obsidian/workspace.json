@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodejs/Node Patch Package.md",
+                "file": "nodejs/SOLID.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/Node Patch Package.md",
+                "file": "nodejs/SOLID.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/Node Patch Package.md",
+                "file": "nodejs/SOLID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/Node Patch Package.md"
+                "file": "nodejs/SOLID.md"
               }
             }
           },
@@ -159,14 +159,18 @@
   },
   "active": "212fd523df1bb81b",
   "lastOpenFiles": [
-    "nodejs/Node.js Application Architecture.md",
+    "shopify/Embedded App.md",
+    "shopify/oauth.md",
+    "nodejs/Events.md",
+    "nodejs/Debugging Node.js.md",
+    "nodejs/Callback hell.md",
     "nodejs/Node Patch Package.md",
+    "nodejs/Node.js Application Architecture.md",
     "nodejs/index.md",
     "intro.md",
     "architect/api/GraphQL.md",
     "nodejs/index.md~",
     "nodejs/Node.js Worker Threads.md",
-    "nodejs/Callback hell.md",
     "nodejs/Callback hell.md~",
     "Pasted image 20240606143817.png",
     "Pasted image 20240606141808.png",
@@ -187,10 +191,6 @@
     "architect/api/GraphQL Cache.md",
     "architect/api/Thinking in Graphs.md",
     "vim/Cheat Sheet.md",
-    "nodejs/Nestjs/middleware.md",
-    "nodejs/Nestjs/Injection.md",
-    "nodejs/Nestjs/index.md",
-    "nodejs/Nestjs/Authentication.md",
     "nodejs/Untitled",
     "nodejs/Typescript",
     "Pasted image 20240605112428.png",
