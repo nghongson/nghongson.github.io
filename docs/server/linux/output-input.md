@@ -23,7 +23,10 @@ sudo sh -c 'echo my_text >> file1'
 sudo -- bash -c 'echo "some data" >> /my/path/to/filename.txt'
 ```
 ## Input Redirection `<`
-`<<`
+ - `<` replaced output file
+ - `<<` add lines to end of file in Linux
+### Append text to end of file using echo command
+`filename << echo 'text here'`
 ## Pipes `|`
 
 ## stdout and stderr

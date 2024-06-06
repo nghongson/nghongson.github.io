@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "server/linux/output-input.md",
+                "file": "nodejs/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "server/linux/output-input.md",
+                "file": "nodejs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "server/linux/output-input.md",
+                "file": "nodejs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "server/linux/output-input.md"
+                "file": "nodejs/index.md"
               }
             }
           },
@@ -172,6 +172,15 @@
   },
   "active": "7977d9751e15240c",
   "lastOpenFiles": [
+    "nodejs/Node.js Architecture.md",
+    "nodejs/index.md",
+    "nodejs/Node.js Worker Threads.md",
+    "nodejs/Callback hell.md",
+    "nodejs/Callback hell.md~",
+    "Pasted image 20240606143817.png",
+    "Pasted image 20240606141808.png",
+    "Pasted image 20240606141214.png",
+    "server/linux/output-input.md",
     "server/linux/awk.md",
     "server/linux/commands.md",
     "server/linux/file-management.md",
@@ -194,11 +203,6 @@
     "nodejs/Nestjs/index.md",
     "nodejs/Nestjs/Authentication.md",
     "nodejs/graphql/resolvers.md",
-    "shopify/oauth.md",
-    "nodejs/Nodejs File system.md",
-    "nodejs/Best Practices for Node.js Development.md",
-    "nodejs/Process Management.md",
-    "nodejs/Logger.md",
     "nodejs/Untitled",
     "nodejs/Typescript",
     "Pasted image 20240605112428.png",
@@ -209,12 +213,10 @@
     "architect/Refactoring/index.md~",
     "architect/Refactoring",
     "nodejs/Nestjs",
-    "nextjs/middleware.md~",
     "Pasted image 20240530020726.png",
     "Pasted image 20240530083507.png",
     "Pasted image 20240530204107.png",
     "Pasted image 20240530204050.png",
-    "Pasted image 20240530015656.png",
-    "Pasted image 20240530015604.png"
+    "Pasted image 20240530015656.png"
   ]
 }
