@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodejs/SOLID.md",
+                "file": "architect/api/GraphQL Cache.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/SOLID.md",
+                "file": "architect/api/GraphQL Cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/SOLID.md",
+                "file": "architect/api/GraphQL Cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/SOLID.md"
+                "file": "architect/api/GraphQL Cache.md"
               }
             }
           },
@@ -159,6 +159,14 @@
   },
   "active": "212fd523df1bb81b",
   "lastOpenFiles": [
+    "architect/OAuth.md",
+    "microservices/Kafka/index.md",
+    "Pasted image 20240607002923.png",
+    "architect/Event Driven Architecture.md",
+    "Pasted image 20240607001840.png",
+    "Pasted image 20240607001317.png",
+    "Pasted image 20240607000727.png",
+    "nodejs/SOLID.md",
     "shopify/Embedded App.md",
     "shopify/oauth.md",
     "nodejs/Events.md",
@@ -183,14 +191,10 @@
     "server/linux/grep.md",
     "server/linux/sed.md",
     "server/linux/awk.md~",
-    "microservices/Kafka/index.md",
     "books.md",
     "golang/Graphql/GraphQL Server Generator for Go.md",
     "architect/api/Graphql vs RESTful.md",
     "architect/api/GraphQL Best Practices.md",
-    "architect/api/GraphQL Cache.md",
-    "architect/api/Thinking in Graphs.md",
-    "vim/Cheat Sheet.md",
     "nodejs/Untitled",
     "nodejs/Typescript",
     "Pasted image 20240605112428.png",
@@ -200,10 +204,6 @@
     "golang/GoFiber",
     "architect/Refactoring/index.md~",
     "architect/Refactoring",
-    "Pasted image 20240530020726.png",
-    "Pasted image 20240530083507.png",
-    "Pasted image 20240530204107.png",
-    "Pasted image 20240530204050.png",
-    "Pasted image 20240530015656.png"
+    "Pasted image 20240530020726.png"
   ]
 }
