@@ -35,15 +35,15 @@ fs.readdir(source, function (err, files) {
 
 ## How do I fix callback hell?
 
-1. Keep your code shallow
+### 1. Keep your code shallow
 
 - makes code easier to read thanks to the descriptive function names
 - when exceptions happen you will get stacktraces that reference actual function names instead of "anonymous"
 - allows you to move the functions and reference them by their names
 
-2. Modularize:  
+### 2. Modularize:  
    Write small modules that each do one thing, and assemble them into other modules that do a bigger thing. You can't get into callback hell if you don't go there.
-3. Handle every single error
+### 3. Handle every single error
 
 ### Promises
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architect/api/GraphQL Cache.md",
+                "file": "nodejs/Nestjs/Awesome.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architect/api/GraphQL Cache.md",
+                "file": "nodejs/Nestjs/Awesome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architect/api/GraphQL Cache.md",
+                "file": "nodejs/Nestjs/Awesome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architect/api/GraphQL Cache.md"
+                "file": "nodejs/Nestjs/Awesome.md"
               }
             }
           },
@@ -160,41 +160,41 @@
   "active": "212fd523df1bb81b",
   "lastOpenFiles": [
     "architect/OAuth.md",
+    "Pasted image 20240608100707.png",
+    "architect/session.md",
+    "nextjs/Awesome.md",
+    "nextjs/ref.md",
+    "nodejs/Nestjs/Awesome.md",
+    "Pasted image 20240607000727.png",
+    "nextjs/Middleware.md",
+    "nextjs/Route Handler.md",
+    "nextjs/cache.md",
+    "nextjs/API Routes.md",
+    "nextjs/GEO IP.md",
+    "nextjs/Lazy Loading.md",
+    "nodejs/Nestjs/Middleware.md",
+    "nodejs/Nestjs/Authentication.md",
+    "nodejs/Best Practices for Node.js Development.md",
+    "nodejs/Callback hell.md",
+    "architect/api/GraphQL Cache.md",
     "microservices/Kafka/index.md",
     "Pasted image 20240607002923.png",
     "architect/Event Driven Architecture.md",
     "Pasted image 20240607001840.png",
     "Pasted image 20240607001317.png",
-    "Pasted image 20240607000727.png",
     "nodejs/SOLID.md",
     "shopify/Embedded App.md",
     "shopify/oauth.md",
     "nodejs/Events.md",
     "nodejs/Debugging Node.js.md",
-    "nodejs/Callback hell.md",
     "nodejs/Node Patch Package.md",
     "nodejs/Node.js Application Architecture.md",
-    "nodejs/index.md",
-    "intro.md",
-    "architect/api/GraphQL.md",
     "nodejs/index.md~",
-    "nodejs/Node.js Worker Threads.md",
     "nodejs/Callback hell.md~",
     "Pasted image 20240606143817.png",
     "Pasted image 20240606141808.png",
     "Pasted image 20240606141214.png",
-    "server/linux/output-input.md",
-    "server/linux/awk.md",
-    "server/linux/commands.md",
-    "server/linux/file-management.md",
-    "server/linux/glob.md",
-    "server/linux/grep.md",
-    "server/linux/sed.md",
     "server/linux/awk.md~",
-    "books.md",
-    "golang/Graphql/GraphQL Server Generator for Go.md",
-    "architect/api/Graphql vs RESTful.md",
-    "architect/api/GraphQL Best Practices.md",
     "nodejs/Untitled",
     "nodejs/Typescript",
     "Pasted image 20240605112428.png",
@@ -203,7 +203,6 @@
     "golang/GORM",
     "golang/GoFiber",
     "architect/Refactoring/index.md~",
-    "architect/Refactoring",
-    "Pasted image 20240530020726.png"
+    "architect/Refactoring"
   ]
 }

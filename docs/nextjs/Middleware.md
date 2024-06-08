@@ -9,7 +9,7 @@
 - Logging and Analytics: Capture and analyze request data for insights before processing by the page or API.
 - Feature Flagging: Enable or disable features dynamically for seamless feature rollouts or testing.
 
-## middleware may not be the optimal approach
+## Middleware may not be the optimal approach
 
 - Complex Data Fetching and Manipulation: Middleware is not designed for direct data fetching or manipulation, this should be done within Route Handlers or server-side utilities instead.
 - Heavy Computational Tasks
@@ -62,4 +62,11 @@ const createWrapperMiddleware: WrapMiddleware = (
   };
 };
 export { createAuthMiddleware };
+```
+
+## Redirects bloom filter
+
+```
+
+import { ScalableBloomFilter } from 'bloom-filters'
 ```
