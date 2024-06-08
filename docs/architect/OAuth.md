@@ -3,7 +3,7 @@
 ![](https://nghongson.github.io/media/Pasted%20image%2020240608100707.png)
 
 OAuth allows different flows (processes), such as:
-![](https://nghongson.github.io/media/Pasted%image%20240608164537.png)
+![](https://nghongson.github.io/media/Pasted%20image%2020240608164537.png)
 Authorization Code Flow — To be used for server-side applications, it acquires an authorization code to exchange for an access token, ensuring the client never exposes the tokens to the user-agent.
 Implicit Flow — Previously used for client-side applications like SPAs, it directly returns an access token upon authorization but lacks refresh tokens and is less recommended due to security issues. It is deprecated due to security weaknesses.
 Resource Owner Password Credentials Flow — This flow allows the client to use the resource owner’s username and password directly, which is suitable for highly trusted or legacy applications but is discouraged due to security risks.

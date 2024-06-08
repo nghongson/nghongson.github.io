@@ -66,7 +66,7 @@ export { createAuthMiddleware };
 
 ## Redirects bloom filter
 
-```
+```typescript
 
 import { ScalableBloomFilter } from 'bloom-filters'
 ```

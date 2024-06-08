@@ -20,7 +20,7 @@ Route Segment Config
 | [`preferredRegion`](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#preferredregion) | `'auto' \| 'global' \| 'home' \| string \| string[]`                                                                      | `'auto'`                   |
 | [`maxDuration`](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#maxduration)         | `number`                                                                                                                  | Set by deployment platform |
 
-```
+```typescript
 layout.tsx | page.tsx | route.ts
 
 export const dynamic = 'auto'

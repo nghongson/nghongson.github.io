@@ -18,4 +18,4 @@ Partitions
 Consumer Group
 ZOOKEEPER
 
-![[Pasted image 20240607002923.png]]
+![](https://nghongson.github.io/media/Pasted%20image%2020240607002923.png)

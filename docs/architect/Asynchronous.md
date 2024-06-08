@@ -3,7 +3,7 @@ Asynchronous programming is a crucial technique for developing high-performance 
 
 In the asynchronous approach, tasks are executed independently and concurrently. This means that the program doesn’t wait for a task to complete before moving on to the next one.
 
-![[Pasted image 20240605112428.png]]
+![](https://nghongson.github.io/media/Pasted%20image%2020240605112428.png)
 ### Synchronous
 - Pros: Easier to reason about, deterministic execution order, less complex error handling.
 - Cons: Slower for long-running tasks, potentially slower overall execution time for multiple tasks.
@@ -13,7 +13,7 @@ In the asynchronous approach, tasks are executed independently and concurrently.
 
 Golang: 
 Golang is achieved using Goroutines, which are lightweight threads managed by the Go runtime.
-```
+```go
 package main
 
 import (
@@ -44,6 +44,6 @@ func main() {
 ```
 
 Nodejs
-```
+```typescript
 
 ```

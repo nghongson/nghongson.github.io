@@ -2,7 +2,7 @@ Asynchronous and deferred operations
 Asynchronous operations are not native to PHP but it is still possible to execute heavy operations simultaneously, or delay them until they absolutely have to be finished.
 ## DeferredInterface
 DeferredInterface to use with asynchronous operations. This allows client code to work with asynchronous operations just as it would with standard operations.
-```
+```php
 Magento\Framework\Async\DeferredInterface
 interface DeferredInterface
 {
@@ -22,7 +22,7 @@ There are 2 types of asynchronous operations where DeferredInterface can be used
 - `With asynchronous` operations in progress, calling get() would wait for them to finish and return their result.
 - `With deferred` operations, get() would actually start the operation, wait for it to finish, and then return the result.
 Sometimes tasks, functions require more control over long asynchronous operations.
-```
+```php
 Magento\Framework\Async\CancelableDeferredInterface
 
 interface CancelableDeferredInterface extends DeferredInterface
@@ -43,7 +43,7 @@ interface CancelableDeferredInterface extends DeferredInterface
 ```
 
 ## Client code
-```
+```php
 public function aMethod() {
     //Started executing 1st operation
     $operationA = $serviceA->executeOp();

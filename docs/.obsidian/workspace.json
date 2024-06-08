@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4ed6ee6f0475d472",
+        "id": "26aa0499761815e7",
         "type": "tabs",
         "children": [
           {
-            "id": "212fd523df1bb81b",
+            "id": "e1bdd33f92d5cc21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architect/OAuth.md",
+                "file": "nodejs/Nestjs/Middleware.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architect/OAuth.md",
+                "file": "nodejs/Nestjs/Middleware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architect/OAuth.md",
+                "file": "nodejs/Nestjs/Middleware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architect/OAuth.md"
+                "file": "nodejs/Nestjs/Middleware.md"
               }
             }
           },
@@ -157,34 +157,37 @@
       "obsidiosaurus:Obsidiosaurus": false
     }
   },
-  "active": "212fd523df1bb81b",
+  "active": "e1bdd33f92d5cc21",
   "lastOpenFiles": [
-    "architect/Asynchronous.md",
-    "architect/OAuth.md~",
-    "architect/12factors.md",
-    "architect/design-patterns/decorator.md",
-    "architect/design-patterns/command.md",
-    "architect/design-patterns/builder.md",
-    "architect/design-patterns/bridge.md",
-    "architect/design-patterns/adapter.md",
-    "architect/design-patterns/Abstract Factory.md",
-    "architect/api/RESTFul.md",
-    "architect/api/Thinking in Graphs.md",
-    "architect/HTTP messages.md",
-    "architect/Event Driven Architecture.md",
-    "architect/api/GraphQL Best Practices.md",
-    "architect/api/GraphQL Cache.md",
-    "architect/api/Graphql vs RESTful.md",
-    "microservices/basic.md",
-    "microservices/Kafka/index.md",
+    "Pasted image 20240608180252.png",
+    "architect/notifications/index.md",
+    "nodejs/Nestjs/Repository.md",
+    "architect/notifications",
+    "nodejs/Nestjs/Untitled.md",
     "nextjs/Static Assets.md",
     "nextjs/Route Handler.md",
     "nextjs/Middleware.md",
     "nextjs/Lazy Loading.md",
-    "shopify/oauth.md",
-    "shopify/Embedded App.md",
+    "nextjs/GEO IP.md",
+    "nextjs/cache.md",
+    "nextjs/Awesome.md",
+    "nextjs/API Routes.md",
+    "architect/Asynchronous.md",
+    "architect/12factors.md",
+    "architect/Refactoring/index.md",
     "architect/Clean Code.md",
-    "architect/Concurrency & Parallelism.md",
+    "architect/HTTP messages.md",
+    "architect/KISS Principle.md",
+    "architect/Event Driven Architecture.md",
+    "architect/SOLID.md",
+    "architect/design-patterns/adapter.md",
+    "architect/design-patterns/Abstract Factory.md",
+    "architect/design-patterns/bridge.md",
+    "architect/api/GraphQL Cache.md",
+    "architect/api/GraphQL Best Practices.md",
+    "architect/api/GraphQL.md",
+    "architect/design-patterns/index.md~",
+    "architect/OAuth.md~",
     "Pasted image 20240608164537.png",
     "Pasted image 20240608100707.png",
     "Pasted image 20240607000727.png",
@@ -201,8 +204,6 @@
     "nodejs/Typescript",
     "Pasted image 20240605112428.png",
     "golang/Graphql",
-    "golang/GORM",
-    "golang/GoFiber",
-    "architect/Refactoring/index.md~"
+    "golang/GORM"
   ]
 }
