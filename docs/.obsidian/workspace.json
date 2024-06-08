@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodejs/Nestjs/Awesome.md",
+                "file": "nextjs/Middleware.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/Nestjs/Awesome.md",
+                "file": "nextjs/Middleware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/Nestjs/Awesome.md",
+                "file": "nextjs/Middleware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/Nestjs/Awesome.md"
+                "file": "nextjs/Middleware.md"
               }
             }
           },
@@ -159,12 +159,17 @@
   },
   "active": "212fd523df1bb81b",
   "lastOpenFiles": [
+    "books.md",
+    "intro.md",
     "architect/OAuth.md",
+    "tes.md",
+    "tasks.md",
+    "Pasted image 20240608164537.png",
+    "nodejs/Nestjs/Awesome.md",
     "Pasted image 20240608100707.png",
     "architect/session.md",
     "nextjs/Awesome.md",
     "nextjs/ref.md",
-    "nodejs/Nestjs/Awesome.md",
     "Pasted image 20240607000727.png",
     "nextjs/Middleware.md",
     "nextjs/Route Handler.md",
@@ -186,9 +191,6 @@
     "shopify/Embedded App.md",
     "shopify/oauth.md",
     "nodejs/Events.md",
-    "nodejs/Debugging Node.js.md",
-    "nodejs/Node Patch Package.md",
-    "nodejs/Node.js Application Architecture.md",
     "nodejs/index.md~",
     "nodejs/Callback hell.md~",
     "Pasted image 20240606143817.png",
@@ -198,7 +200,6 @@
     "nodejs/Untitled",
     "nodejs/Typescript",
     "Pasted image 20240605112428.png",
-    "neovim-cheat-sheet-v0-vmyvqrxi2e4c1.png",
     "golang/Graphql",
     "golang/GORM",
     "golang/GoFiber",
