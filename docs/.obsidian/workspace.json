@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodejs/Nestjs/Middleware.md",
+                "file": "architect/Clean Architecture.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4b83615f803ebf9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "web3/DApp.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/Nestjs/Middleware.md",
+                "file": "web3/DApp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/Nestjs/Middleware.md",
+                "file": "web3/DApp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/Nestjs/Middleware.md"
+                "file": "web3/DApp.md"
               }
             }
           },
@@ -157,35 +170,38 @@
       "obsidiosaurus:Obsidiosaurus": false
     }
   },
-  "active": "e1bdd33f92d5cc21",
+  "active": "4b83615f803ebf9f",
   "lastOpenFiles": [
+    "architect/Concurrency & Parallelism.md",
+    "web3/DApp.md",
+    "Pasted image 20240610005214.png",
+    "architect/Clean Code.md",
+    "architect/12factors.md",
+    "architect/Refactoring/Software Refactoring.md",
+    "architect/Refactoring/index.md",
+    "microservices/basic.md",
+    "microservices/Question - Answer.md",
+    "Pasted image 20240609233407.png",
+    "nextjs/Route Handler.md",
+    "architect/Clean Architecture.md",
+    "architect/Background Process.md",
+    "architect/Asynchronous.md",
+    "nodejs/Nestjs/Interceptors.md",
+    "nodejs/Nestjs/Decorators.md",
+    "nodejs/Nestjs/Middleware.md",
     "Pasted image 20240608180252.png",
     "architect/notifications/index.md",
     "nodejs/Nestjs/Repository.md",
     "architect/notifications",
     "nodejs/Nestjs/Untitled.md",
     "nextjs/Static Assets.md",
-    "nextjs/Route Handler.md",
     "nextjs/Middleware.md",
     "nextjs/Lazy Loading.md",
     "nextjs/GEO IP.md",
     "nextjs/cache.md",
     "nextjs/Awesome.md",
     "nextjs/API Routes.md",
-    "architect/Asynchronous.md",
-    "architect/12factors.md",
-    "architect/Refactoring/index.md",
-    "architect/Clean Code.md",
     "architect/HTTP messages.md",
-    "architect/KISS Principle.md",
-    "architect/Event Driven Architecture.md",
-    "architect/SOLID.md",
-    "architect/design-patterns/adapter.md",
-    "architect/design-patterns/Abstract Factory.md",
-    "architect/design-patterns/bridge.md",
-    "architect/api/GraphQL Cache.md",
-    "architect/api/GraphQL Best Practices.md",
-    "architect/api/GraphQL.md",
     "architect/design-patterns/index.md~",
     "architect/OAuth.md~",
     "Pasted image 20240608164537.png",
@@ -197,12 +213,9 @@
     "nodejs/index.md~",
     "nodejs/Callback hell.md~",
     "Pasted image 20240606143817.png",
-    "Pasted image 20240606141808.png",
-    "Pasted image 20240606141214.png",
     "server/linux/awk.md~",
     "nodejs/Untitled",
     "nodejs/Typescript",
-    "Pasted image 20240605112428.png",
     "golang/Graphql",
     "golang/GORM"
   ]
