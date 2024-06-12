@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "web3/DApp.md",
+                "file": "architect/Clean Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "web3/DApp.md",
+                "file": "architect/Clean Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "web3/DApp.md"
+                "file": "architect/Clean Architecture.md"
               }
             }
           },
@@ -170,7 +171,7 @@
       "obsidiosaurus:Obsidiosaurus": false
     }
   },
-  "active": "4b83615f803ebf9f",
+  "active": "16ef59013862ac1c",
   "lastOpenFiles": [
     "architect/Concurrency & Parallelism.md",
     "web3/DApp.md",
