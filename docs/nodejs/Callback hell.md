@@ -4,7 +4,7 @@
 
 Asynchronous JavaScript, or JavaScript that uses callbacks, is hard to get right intuitively. A lot of code ends up looking like this:
 
-```
+```node
 fs.readdir(source, function (err, files) {
   if (err) {
     console.log('Error finding files: ' + err)

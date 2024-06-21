@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web3/DApp.md",
+                "file": "nextjs/HOC.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architect/Clean Architecture.md",
+                "file": "nextjs/HOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,9 +115,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architect/Clean Architecture.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "file": "nextjs/HOC.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architect/Clean Architecture.md"
+                "file": "nextjs/HOC.md"
               }
             }
           },
@@ -150,13 +149,21 @@
               "type": "mermaid-toolbar-view",
               "state": {}
             }
+          },
+          {
+            "id": "5f2d68e337ac9091",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 772.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,41 +175,46 @@
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
-      "obsidiosaurus:Obsidiosaurus": false
+      "obsidiosaurus:Obsidiosaurus": false,
+      "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "16ef59013862ac1c",
+  "active": "4b83615f803ebf9f",
   "lastOpenFiles": [
-    "architect/Concurrency & Parallelism.md",
-    "web3/DApp.md",
-    "Pasted image 20240610005214.png",
-    "architect/Clean Code.md",
-    "architect/12factors.md",
-    "architect/Refactoring/Software Refactoring.md",
-    "architect/Refactoring/index.md",
-    "microservices/basic.md",
-    "microservices/Question - Answer.md",
-    "Pasted image 20240609233407.png",
-    "nextjs/Route Handler.md",
+    "nextjs/Typescript.md",
+    "nextjs/HOC.md",
     "architect/Clean Architecture.md",
-    "architect/Background Process.md",
-    "architect/Asynchronous.md",
-    "nodejs/Nestjs/Interceptors.md",
-    "nodejs/Nestjs/Decorators.md",
-    "nodejs/Nestjs/Middleware.md",
+    "Untitled",
+    "nodejs/Orm/drizzle.md",
+    "nodejs/Orm/mikro-orm.md",
+    "nodejs/Orm/Sequelize.md",
+    "mage2/graphql.md",
+    "nodejs/Orm",
+    "mage2/routing.md",
+    "mage2/sales.md",
+    "mage2/security.md",
+    "mage2/working-with-db.md",
+    "mage2/setup.md",
+    "mage2/request-flow-processing.md",
+    "mage2/payment.md",
+    "mage2/module-architecture.md",
+    "mage2/magento-cache.md",
+    "mage2/mage-framework.md",
+    "mage2/json-schema.md",
+    "mage2/Image Optimize.md",
+    "mage2/guides.md",
+    "mage2/files.md",
+    "mage2/eav.md",
+    "mage2/debugs.md",
+    "mage2/customize-cart-attrs.md",
+    "mage2/customer-manager.md",
+    "mage2/collect-totals.md",
+    "Pasted image 20240617221722.png",
+    "rust",
+    "Pasted image 20240610005214.png",
+    "Pasted image 20240609233407.png",
     "Pasted image 20240608180252.png",
-    "architect/notifications/index.md",
-    "nodejs/Nestjs/Repository.md",
     "architect/notifications",
-    "nodejs/Nestjs/Untitled.md",
-    "nextjs/Static Assets.md",
-    "nextjs/Middleware.md",
-    "nextjs/Lazy Loading.md",
-    "nextjs/GEO IP.md",
-    "nextjs/cache.md",
-    "nextjs/Awesome.md",
-    "nextjs/API Routes.md",
-    "architect/HTTP messages.md",
     "architect/design-patterns/index.md~",
     "architect/OAuth.md~",
     "Pasted image 20240608164537.png",
@@ -213,11 +225,7 @@
     "Pasted image 20240607001317.png",
     "nodejs/index.md~",
     "nodejs/Callback hell.md~",
-    "Pasted image 20240606143817.png",
     "server/linux/awk.md~",
-    "nodejs/Untitled",
-    "nodejs/Typescript",
-    "golang/Graphql",
-    "golang/GORM"
+    "nodejs/Typescript"
   ]
 }

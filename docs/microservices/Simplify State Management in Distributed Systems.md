@@ -1,0 +1,1 @@
+# How to Simplify State Management in Distributed Systems

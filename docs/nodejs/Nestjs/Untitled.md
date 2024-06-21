@@ -1,0 +1,1 @@
+https://tsed.io/docs/services.html#decorators

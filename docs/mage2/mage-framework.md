@@ -116,7 +116,7 @@ const ADMIN_RESOURCE = 'Vendor_MyModule::delete';
 ```
 
 ## API
-### SearchCriteria
+### Search Criteria
 ### Search
 
 
