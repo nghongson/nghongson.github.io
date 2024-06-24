@@ -7,3 +7,5 @@ ToolJet
 
 Examples
 https://hardcover.app/blog/next-js-app-router-seo
+
+https://www.datocms.com/docs/next-js

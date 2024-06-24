@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "4b83615f803ebf9f",
+            "id": "e41a421b6be1a140",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nextjs/HOC.md",
+                "file": "nextjs/Awesome.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nextjs/HOC.md",
+                "file": "nextjs/Awesome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nextjs/HOC.md",
+                "file": "nextjs/Awesome.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nextjs/HOC.md"
+                "file": "nextjs/Awesome.md"
               }
             }
           },
@@ -179,11 +179,15 @@
       "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "4b83615f803ebf9f",
+  "active": "e41a421b6be1a140",
   "lastOpenFiles": [
-    "nextjs/Typescript.md",
-    "nextjs/HOC.md",
+    "nodejs/Awesome.md",
+    "nodejs/Typescript/index.md",
+    "architect/Awesome.md",
     "architect/Clean Architecture.md",
+    "nextjs/Untitled.md",
+    "nextjs/HOC.md",
+    "nextjs/Typescript.md",
     "Untitled",
     "nodejs/Orm/drizzle.md",
     "nodejs/Orm/mikro-orm.md",
@@ -205,10 +209,6 @@
     "mage2/guides.md",
     "mage2/files.md",
     "mage2/eav.md",
-    "mage2/debugs.md",
-    "mage2/customize-cart-attrs.md",
-    "mage2/customer-manager.md",
-    "mage2/collect-totals.md",
     "Pasted image 20240617221722.png",
     "rust",
     "Pasted image 20240610005214.png",
