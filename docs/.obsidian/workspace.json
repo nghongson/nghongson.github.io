@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nextjs/Awesome.md",
+                "file": "nodejs/Decorators.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nextjs/Awesome.md",
+                "file": "nodejs/Decorators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nextjs/Awesome.md",
+                "file": "nodejs/Decorators.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nextjs/Awesome.md"
+                "file": "nodejs/Decorators.md"
               }
             }
           },
@@ -181,8 +181,12 @@
   },
   "active": "e41a421b6be1a140",
   "lastOpenFiles": [
-    "nodejs/Awesome.md",
     "nodejs/Typescript/index.md",
+    "nodejs/Decorators.md",
+    "nodejs/Awesome.md",
+    "nodejs/reflect-metadata.md",
+    "nodejs/Typescript/tsed.md",
+    "nextjs/Awesome.md",
     "architect/Awesome.md",
     "architect/Clean Architecture.md",
     "nextjs/Untitled.md",
@@ -205,10 +209,6 @@
     "mage2/magento-cache.md",
     "mage2/mage-framework.md",
     "mage2/json-schema.md",
-    "mage2/Image Optimize.md",
-    "mage2/guides.md",
-    "mage2/files.md",
-    "mage2/eav.md",
     "Pasted image 20240617221722.png",
     "rust",
     "Pasted image 20240610005214.png",
