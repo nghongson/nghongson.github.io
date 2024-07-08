@@ -25,7 +25,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodejs/Decorators.md",
+                "file": "nodejs/Typescript/Test.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "04ab4823842ca470",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "App Booking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b1776e72fc387eaa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodejs/Typescript/Mixins.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/Decorators.md",
+                "file": "nodejs/Typescript/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/Decorators.md",
+                "file": "nodejs/Typescript/Test.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/Decorators.md"
+                "file": "nodejs/Typescript/Test.md"
               }
             }
           },
@@ -182,10 +206,24 @@
   "active": "e41a421b6be1a140",
   "lastOpenFiles": [
     "nodejs/Typescript/index.md",
-    "nodejs/Decorators.md",
+    "nodejs/Typescript/Untitled 1.md",
+    "nodejs/Typescript/Decorators.md",
+    "nodejs/Typescript/IoC.md",
+    "nodejs/Typescript/Test.md",
+    "nodejs/Typescript/Mixins.md",
     "nodejs/Awesome.md",
-    "nodejs/reflect-metadata.md",
     "nodejs/Typescript/tsed.md",
+    "nodejs/Typescript/TypeScript Cheat Sheets.md",
+    "Pasted image 20240626202709.png",
+    "Pasted image 20240626202657.png",
+    "Pasted image 20240626202635.png",
+    "Pasted image 20240626202620.png",
+    "nodejs/Typescript/Project Config.md",
+    "Pasted image 20240626190813.png",
+    "Excalidraw/Drawing 2024-06-26 14.49.40.excalidraw.md",
+    "App Booking.md",
+    "Excalidraw",
+    "nodejs/reflect-metadata.md",
     "nextjs/Awesome.md",
     "architect/Awesome.md",
     "architect/Clean Architecture.md",
@@ -201,14 +239,6 @@
     "mage2/routing.md",
     "mage2/sales.md",
     "mage2/security.md",
-    "mage2/working-with-db.md",
-    "mage2/setup.md",
-    "mage2/request-flow-processing.md",
-    "mage2/payment.md",
-    "mage2/module-architecture.md",
-    "mage2/magento-cache.md",
-    "mage2/mage-framework.md",
-    "mage2/json-schema.md",
     "Pasted image 20240617221722.png",
     "rust",
     "Pasted image 20240610005214.png",
@@ -218,14 +248,8 @@
     "architect/design-patterns/index.md~",
     "architect/OAuth.md~",
     "Pasted image 20240608164537.png",
-    "Pasted image 20240608100707.png",
-    "Pasted image 20240607000727.png",
-    "Pasted image 20240607002923.png",
-    "Pasted image 20240607001840.png",
-    "Pasted image 20240607001317.png",
     "nodejs/index.md~",
     "nodejs/Callback hell.md~",
-    "server/linux/awk.md~",
-    "nodejs/Typescript"
+    "server/linux/awk.md~"
   ]
 }
