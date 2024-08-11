@@ -1,4 +1,3 @@
-Test 
 Wrapped function with typescript
 
 ```

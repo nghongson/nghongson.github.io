@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodejs/Typescript/Test.md",
+                "file": "nodejs/Typescript/IoC.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/Typescript/Test.md",
+                "file": "nodejs/Typescript/IoC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/Typescript/Test.md",
+                "file": "nodejs/Typescript/IoC.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/Typescript/Test.md"
+                "file": "nodejs/Typescript/IoC.md"
               }
             }
           },
@@ -181,6 +181,13 @@
   },
   "active": "e41a421b6be1a140",
   "lastOpenFiles": [
+    "nodejs/Typescript/TypeScript Cheat Sheets.md",
+    "nodejs/Typescript/IoC.md~",
+    "nodejs/Typescript/Solid.md",
+    "nodejs/Typescript/Solid.md~",
+    "nodejs/Tsed/tsed.md",
+    "nodejs/Tsed",
+    "nodejs/Typescript/Wrapper Fn.md",
     "Pasted image 20240626202620.png",
     "Pasted image 20240609233407.png",
     "Pasted image 20240608180252.png",
@@ -196,12 +203,9 @@
     "nodejs/Typescript/Decorators.md",
     "nodejs/Typescript/Mixins.md",
     "Report.md",
-    "nodejs/Typescript/Test.md",
     "nodejs/Typescript/Untitled 1.md",
     "nodejs/Typescript/IoC.md",
     "nodejs/Awesome.md",
-    "nodejs/Typescript/tsed.md",
-    "nodejs/Typescript/TypeScript Cheat Sheets.md",
     "Pasted image 20240626202709.png",
     "Pasted image 20240626202657.png",
     "Pasted image 20240626202635.png",
@@ -214,7 +218,6 @@
     "architect/Clean Architecture.md",
     "nextjs/Untitled.md",
     "nextjs/HOC.md",
-    "nextjs/Typescript.md",
     "Untitled",
     "nodejs/Orm",
     "Pasted image 20240617221722.png",
@@ -222,9 +225,6 @@
     "Pasted image 20240610005214.png",
     "architect/notifications",
     "architect/design-patterns/index.md~",
-    "architect/OAuth.md~",
-    "Pasted image 20240608164537.png",
-    "nodejs/index.md~",
-    "nodejs/Callback hell.md~"
+    "Pasted image 20240608164537.png"
   ]
 }
