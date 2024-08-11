@@ -30,30 +30,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "04ab4823842ca470",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "App Booking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b1776e72fc387eaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodejs/Typescript/Mixins.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
         "currentTab": 1
@@ -205,25 +181,34 @@
   },
   "active": "e41a421b6be1a140",
   "lastOpenFiles": [
+    "Pasted image 20240626202620.png",
+    "Pasted image 20240609233407.png",
+    "Pasted image 20240608180252.png",
+    "nodejs/Node.js Worker Threads.md",
+    "App Booking.md",
+    "nodejs/Untitled.md",
+    "nodejs/Node Patch Package.md",
+    "nodejs/SOLID.md",
+    "nodejs/DDD",
+    "nodejs/Profiling Node.js Applications.md",
+    "nodejs/reflect-metadata.md",
     "nodejs/Typescript/index.md",
-    "nodejs/Typescript/Untitled 1.md",
     "nodejs/Typescript/Decorators.md",
-    "nodejs/Typescript/IoC.md",
-    "nodejs/Typescript/Test.md",
     "nodejs/Typescript/Mixins.md",
+    "Report.md",
+    "nodejs/Typescript/Test.md",
+    "nodejs/Typescript/Untitled 1.md",
+    "nodejs/Typescript/IoC.md",
     "nodejs/Awesome.md",
     "nodejs/Typescript/tsed.md",
     "nodejs/Typescript/TypeScript Cheat Sheets.md",
     "Pasted image 20240626202709.png",
     "Pasted image 20240626202657.png",
     "Pasted image 20240626202635.png",
-    "Pasted image 20240626202620.png",
     "nodejs/Typescript/Project Config.md",
     "Pasted image 20240626190813.png",
     "Excalidraw/Drawing 2024-06-26 14.49.40.excalidraw.md",
-    "App Booking.md",
     "Excalidraw",
-    "nodejs/reflect-metadata.md",
     "nextjs/Awesome.md",
     "architect/Awesome.md",
     "architect/Clean Architecture.md",
@@ -231,25 +216,15 @@
     "nextjs/HOC.md",
     "nextjs/Typescript.md",
     "Untitled",
-    "nodejs/Orm/drizzle.md",
-    "nodejs/Orm/mikro-orm.md",
-    "nodejs/Orm/Sequelize.md",
-    "mage2/graphql.md",
     "nodejs/Orm",
-    "mage2/routing.md",
-    "mage2/sales.md",
-    "mage2/security.md",
     "Pasted image 20240617221722.png",
     "rust",
     "Pasted image 20240610005214.png",
-    "Pasted image 20240609233407.png",
-    "Pasted image 20240608180252.png",
     "architect/notifications",
     "architect/design-patterns/index.md~",
     "architect/OAuth.md~",
     "Pasted image 20240608164537.png",
     "nodejs/index.md~",
-    "nodejs/Callback hell.md~",
-    "server/linux/awk.md~"
+    "nodejs/Callback hell.md~"
   ]
 }
