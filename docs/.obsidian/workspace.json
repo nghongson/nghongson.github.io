@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodejs/Typescript/IoC.md",
+                "file": "mage2/setup.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/Typescript/IoC.md",
+                "file": "mage2/setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/Typescript/IoC.md",
+                "file": "mage2/setup.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/Typescript/IoC.md"
+                "file": "mage2/setup.md"
               }
             }
           },
@@ -181,6 +181,7 @@
   },
   "active": "e41a421b6be1a140",
   "lastOpenFiles": [
+    "nodejs/Typescript/IoC.md",
     "nodejs/Typescript/TypeScript Cheat Sheets.md",
     "nodejs/Typescript/IoC.md~",
     "nodejs/Typescript/Solid.md",
@@ -204,7 +205,6 @@
     "nodejs/Typescript/Mixins.md",
     "Report.md",
     "nodejs/Typescript/Untitled 1.md",
-    "nodejs/Typescript/IoC.md",
     "nodejs/Awesome.md",
     "Pasted image 20240626202709.png",
     "Pasted image 20240626202657.png",

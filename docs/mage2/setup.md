@@ -25,3 +25,7 @@ composer config repositories.<group_id> composer https://gitlab.example.com/api/
 composer config gitlab-token.<DOMAIN-NAME> <personal_access_token>
 composer require <package_name>:<version>
 ```
+
+
+Install 
+setup:install --cleanup-database
