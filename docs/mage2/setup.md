@@ -28,4 +28,38 @@ composer require <package_name>:<version>
 
 
 Install 
-setup:install --cleanup-database
+bin/magento setup:install --cleanup-database \
+--db-host=database \
+--db-name=basem2 \
+--db-user=root \
+--db-password=root \
+--admin-firstname=admin \
+--admin-lastname=admin \
+--admin-email=admin@admin.com \
+--admin-user=admin \
+--admin-password=admin123 \
+--language=en_US \
+--currency=USD \
+--timezone=America/Chicago \
+--use-rewrites=1 \
+--search-engine=elasticsearch8 --elasticsearch-host=elasticsearch --elasticsearch-port=9200 --elasticsearch-index-prefix magento --elasticsearch-timeout 15
+
+
+bin/magento module:disable Magento_TwoFactorAuth Magento_AdminAdobeImsTwoFactorAuth
+
+
+curl -X PUT "https://elasticsearch:9200/_cluster/settings" -H "Content-Type: application/json" -d'
+{
+  "persistent": {
+    "indices.id_field_data.enabled": true
+  }
+}'
+
+Composer 
+composer config --list --global
+
+
+
+2.4.3
+
+https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/
