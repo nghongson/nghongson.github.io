@@ -1,4 +1,3 @@
-
 # Security on Magento
 
 - Session Manager
