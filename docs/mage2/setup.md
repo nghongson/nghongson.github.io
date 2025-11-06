@@ -25,8 +25,9 @@ composer config gitlab-token.<DOMAIN-NAME> <personal_access_token>
 composer require <package_name>:<version>
 ```
 
+Install
 
-Install 
+```
 bin/magento setup:install --cleanup-database \
 --db-host=database \
 --db-name=basem2 \
@@ -54,11 +55,13 @@ curl -X PUT "https://elasticsearch:9200/_cluster/settings" -H "Content-Type: app
   }
 }'
 
-Composer 
+Composer
 composer config --list --global
 
 
+```
 
 2.4.3
 
 https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/
+
