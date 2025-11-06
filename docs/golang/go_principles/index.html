@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-golang/go_principles" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.3.2">
+<title data-rh="true">go_principles | Leo Nguyen</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://nghongson.github.io/docs/golang/go_principles"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="go_principles | Leo Nguyen"><meta data-rh="true" name="description" content="I. Đơn giản &amp; Rõ ràng (Simplicity &amp; Readability)"><meta data-rh="true" property="og:description" content="I. Đơn giản &amp; Rõ ràng (Simplicity &amp; Readability)"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://nghongson.github.io/docs/golang/go_principles"><link data-rh="true" rel="alternate" href="https://nghongson.github.io/docs/golang/go_principles" hreflang="en"><link data-rh="true" rel="alternate" href="https://nghongson.github.io/docs/golang/go_principles" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Leo Nguyen RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Leo Nguyen Atom Feed"><link rel="stylesheet" href="/assets/css/styles.f3523287.css">
+<script src="/assets/js/runtime~main.6233e384.js" defer="defer"></script>
+<script src="/assets/js/main.92d2f3a2.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/leo.jpg" alt="Leo Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/leo.jpg" alt="Leo Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Docs</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Docs</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/server">Server</a><button aria-label="Expand sidebar category &#x27;Server&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/shopify">Shopify</a><button aria-label="Expand sidebar category &#x27;Shopify&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/vim">Vim</a><button aria-label="Expand sidebar category &#x27;Vim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/architect">Architect</a><button aria-label="Expand sidebar category &#x27;Architect&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/golang">Golang</a><button aria-label="Collapse sidebar category &#x27;Golang&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/Awesome">Awesome</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/GORM/">GORM</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/Go Concurrency Patterns">Go Concurrency Patterns</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/GoFiber/">GoFiber</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/golang/Graphql/GraphQL Server Generator for Go">Graphql</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/SOLID Golang">SOLID Golang</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/go_error">go_error</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/golang/go_principles">go_principles</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/handling_error_exception_api">handling_error_exception_api</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/patterns_in_go">patterns_in_go</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/some_problems">some_problems</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/mage2">Mage2</a><button aria-label="Expand sidebar category &#x27;Mage2&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/microservices">Microservices</a><button aria-label="Expand sidebar category &#x27;Microservices&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/nextjs">Nextjs</a><button aria-label="Expand sidebar category &#x27;Nextjs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/nodejs">Nodejs</a><button aria-label="Expand sidebar category &#x27;Nodejs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/my-workflow">My Workflow</a><button aria-label="Expand sidebar category &#x27;My Workflow&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/database">Database</a><button aria-label="Expand sidebar category &#x27;Database&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/books">Books</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/Excalidraw/Drawing 2024-06-26 14.49.40.excalidraw">Excalidraw</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/rust/">index</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/web3/DApp">web3</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/golang"><span itemprop="name">Golang</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">go_principles</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>go_principles</h1></header><h3 class="anchor anchorWithStickyNavbar_LWe7" id="I-Đơn-giản--Rõ-ràng-Simplicity--Readability">I. Đơn giản &amp; Rõ ràng (Simplicity &amp; Readability)<a href="#I-Đơn-giản--Rõ-ràng-Simplicity--Readability" class="hash-link" aria-label="Direct link to I. Đơn giản &amp; Rõ ràng (Simplicity &amp; Readability)" title="Direct link to I. Đơn giản &amp; Rõ ràng (Simplicity &amp; Readability)">​</a></h3>
+<ol>
+<li>
+<p><strong>Code Rõ ràng hơn Code Thông minh (Clearer Code Over Clever Code):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Go ưu tiên sự rõ ràng và dễ đọc hơn các kỹ thuật lập trình phức tạp hoặc &quot;thông minh&quot;. Mã phải dễ hiểu ngay cả đối với người mới làm quen với dự án.</li>
+<li><strong>Áp dụng:</strong> Tránh các thủ thuật code khó hiểu, ưu tiên các giải pháp trực tiếp. Sử dụng tên biến và hàm có ý nghĩa, tuân thủ các quy ước định dạng (<code>gofmt</code>, <code>golint</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Explicit is Better Than Implicit (Minh bạch hơn Ngầm định):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Go khuyến khích làm rõ mọi thứ thay vì ẩn chúng đi. Không có tính năng &quot;phép thuật&quot; tự động.</li>
+<li><strong>Áp dụng:</strong> Ví dụ, bạn phải <code>import</code> rõ ràng mọi gói bạn sử dụng. Xử lý lỗi được thực hiện tường minh bằng cách trả về <code>error</code> chứ không phải exception.</li>
+</ul>
+</li>
+<li>
+<p><strong>Few Features, More Productivity (Ít tính năng, Năng suất cao hơn):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Go có một tập hợp tính năng nhỏ gọn, không có generics (cho đến Go 1.18), không có kế thừa lớp, không có annotations, v.v. Điều này làm giảm độ phức tạp và &quot;cognitive load&quot; cho lập trình viên.</li>
+<li><strong>Áp dụng:</strong> Tập trung vào giải pháp cho vấn đề cụ thể thay vì tìm kiếm các tính năng ngôn ngữ. Sử dụng những gì Go cung cấp (interfaces, embedding, goroutines, channels) một cách hiệu quả.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="II-Hiệu-suất--Hiệu-quả-Performance--Efficiency">II. Hiệu suất &amp; Hiệu quả (Performance &amp; Efficiency)<a href="#II-Hiệu-suất--Hiệu-quả-Performance--Efficiency" class="hash-link" aria-label="Direct link to II. Hiệu suất &amp; Hiệu quả (Performance &amp; Efficiency)" title="Direct link to II. Hiệu suất &amp; Hiệu quả (Performance &amp; Efficiency)">​</a></h3>
+<ol>
+<li>
+<p><strong>Concurrency (Đồng thời) qua <code>goroutines</code> và <code>channels</code>:</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Go được xây dựng từ đầu để hỗ trợ đồng thời như một tính năng ngôn ngữ hạng nhất, không phải là một thư viện bổ sung. Mô hình CSP (Communicating Sequential Processes) là cốt lõi.</li>
+<li><strong>Áp dụng:</strong>
+<ul>
+<li>Sử dụng <code>goroutines</code> cho các tác vụ độc lập hoặc song song mà không cần lo lắng quá nhiều về chi phí.</li>
+<li>Sử dụng <code>channels</code> để giao tiếp và đồng bộ hóa giữa các <code>goroutines</code>, tránh sử dụng shared memory và mutexes bất cứ khi nào có thể (&quot;Don&#x27;t communicate by sharing memory; instead, share memory by communicating&quot;).</li>
+<li>Áp dụng các mẫu đồng thời như Worker Pool, Fan-Out/Fan-In, Pipelines.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Giảm thiểu Allocations (Phân bổ bộ nhớ) và Áp lực Garbage Collector (GC):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Mặc dù Go có GC, việc phân bổ bộ nhớ quá mức (đặc biệt trong các vòng lặp nóng) có thể gây ra áp lực lớn lên GC, dẫn đến việc tạm dừng (pauses) và giảm hiệu suất.</li>
+<li><strong>Áp dụng:</strong>
+<ul>
+<li>Sử dụng <code>bytes.Buffer</code> hoặc <code>strings.Builder</code> thay vì nối chuỗi <code>+=</code> trong vòng lặp.</li>
+<li>Khởi tạo slice với dung lượng phù hợp (ví dụ: <code>make([]int, 0, capacity)</code>).</li>
+<li>Tái sử dụng các đối tượng (ví dụ: sử dụng <code>sync.Pool</code>).</li>
+<li>Hiểu về cách các đối tượng được phân bổ trên heap so với stack.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tập trung vào hiệu năng (Performance Focus):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Go được thiết kế để hiệu quả, với thời gian biên dịch nhanh, khởi động nhanh và hiệu suất runtime gần với C/C++.</li>
+<li><strong>Áp dụng:</strong> Sử dụng <code>pprof</code> để phân tích hiệu suất (CPU, bộ nhớ, block, mutex) và tìm ra các điểm ngh  ẽn. Viết benchmark (<code>go test -bench .</code>) cho các đoạn mã quan trọng.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="III-Khả-năng-Kiểm-thử--Bảo-trì-Testability--Maintainability">III. Khả năng Kiểm thử &amp; Bảo trì (Testability &amp; Maintainability)<a href="#III-Khả-năng-Kiểm-thử--Bảo-trì-Testability--Maintainability" class="hash-link" aria-label="Direct link to III. Khả năng Kiểm thử &amp; Bảo trì (Testability &amp; Maintainability)" title="Direct link to III. Khả năng Kiểm thử &amp; Bảo trì (Testability &amp; Maintainability)">​</a></h3>
+<ol>
+<li>
+<p><strong>Interfaces để Decoupling và Testability:</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Go không có tính kế thừa lớp, nhưng sử dụng <code>interfaces</code> để đạt được tính đa hình và decoupling. <code>interfaces</code> trong Go là ngầm định (implicit) – một struct tự động thỏa mãn một <code>interface</code> nếu nó triển khai tất cả các phương thức của <code>interface</code> đó.</li>
+<li><strong>Áp dụng:</strong>
+<ul>
+<li>Sử dụng <code>interfaces</code> để định nghĩa các hợp đồng (contracts) giữa các thành phần, đặc biệt là giữa service layer và data persistence layer (Repository Pattern).</li>
+<li>&quot;Accept interfaces, return structs&quot;: Hàm nên chấp nhận <code>interfaces</code> làm tham số (để có thể truyền mock hoặc các triển khai khác nhau) nhưng trả về <code>structs</code> cụ thể (để cung cấp đầy đủ chức năng).</li>
+<li>Điều này giúp dễ dàng mock các dependencies cho unit testing.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Xử lý lỗi rõ ràng (Explicit Error Handling):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Go sử dụng giá trị trả về <code>error</code> làm cơ chế chính để xử lý lỗi, thay vì exceptions. Điều này buộc lập trình viên phải đối mặt và xử lý các trường hợp lỗi một cách tường minh.</li>
+<li><strong>Áp dụng:</strong>
+<ul>
+<li>Luôn kiểm tra <code>if err != nil</code>.</li>
+<li>Trả về lỗi càng sớm càng tốt (<code>fail fast</code>).</li>
+<li>Sử dụng <code>fmt.Errorf</code> với <code>%w</code> (từ Go 1.13) để wrap lỗi, duy trì chuỗi lỗi để dễ dàng gỡ lỗi và kiểm tra loại lỗi.</li>
+<li>Cân nhắc khi nào nên <code>panic</code>/<code>recover</code> (chủ yếu cho các lỗi không thể phục hồi hoặc khởi tạo ứng dụng).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Tính nhất quán của mã (Code Consistency):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Go rất chú trọng đến tính nhất quán thông qua các công cụ như <code>gofmt</code> (tự động định dạng mã) và <code>golint</code> (kiểm tra kiểu dáng).</li>
+<li><strong>Áp dụng:</strong> Luôn chạy <code>gofmt</code> và tuân thủ các quy tắc kiểu dáng của cộng đồng Go. Điều này giúp mã dễ đọc và bảo trì trên toàn bộ dự án và team.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="IV-Kiến-trúc--Thiết-kế-hệ-thống-Architecture--System-Design">IV. Kiến trúc &amp; Thiết kế hệ thống (Architecture &amp; System Design)<a href="#IV-Kiến-trúc--Thiết-kế-hệ-thống-Architecture--System-Design" class="hash-link" aria-label="Direct link to IV. Kiến trúc &amp; Thiết kế hệ thống (Architecture &amp; System Design)" title="Direct link to IV. Kiến trúc &amp; Thiết kế hệ thống (Architecture &amp; System Design)">​</a></h3>
+<ol>
+<li>
+<p><strong>Microservices &amp; Bounded Contexts:</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Go là một lựa chọn tuyệt vời cho microservices do hiệu suất cao, khởi động nhanh và khả năng xử lý đồng thời. Triết lý DDD Bounded Contexts phù hợp tự nhiên với việc chia nhỏ các dịch vụ.</li>
+<li><strong>Áp dụng:</strong> Thiết kế mỗi dịch vụ xoay quanh một Bounded Context, mỗi dịch vụ sở hữu dữ liệu riêng của nó. Giảm thiểu coupling giữa các dịch vụ.</li>
+</ul>
+</li>
+<li>
+<p><strong>Eventual Consistency (Nhất quán cuối cùng) qua Message Queues:</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Trong các hệ thống phân tán, nhất quán mạnh (strong consistency) giữa các dịch vụ là khó và đắt đỏ. Nhất quán cuối cùng thường là đủ và linh hoạt hơn.</li>
+<li><strong>Áp dụng:</strong> Sử dụng message brokers (Kafka, NATS, RabbitMQ) để giao tiếp không đồng bộ giữa các dịch vụ. Áp dụng Saga Pattern để quản lý các giao dịch phân tán.</li>
+</ul>
+</li>
+<li>
+<p><strong>Resilience &amp; Fault Tolerance (Khả năng phục hồi &amp; Chống lỗi):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Các hệ thống phân tán luôn có khả năng thất bại. Thiết kế ứng dụng để chịu đựng và phục hồi từ lỗi là tối quan trọng.</li>
+<li><strong>Áp dụng:</strong> Sử dụng các mẫu như Circuit Breaker, Retry Pattern với exponential backoff. Đảm bảo các hoạt động là idempotent.</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuration over Convention (Cấu hình hơn Quy ước) - ở một mức độ:</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Mặc dù Go có nhiều quy ước, nó cũng cung cấp các cơ chế rõ ràng để cấu hình các thành phần (ví dụ: Functional Options Pattern) thay vì dựa vào các quy ước ngầm định hoặc magic string/annotation.</li>
+<li><strong>Áp dụng:</strong> Cung cấp các API dễ cấu hình và mở rộng cho các thư viện hoặc thành phần dịch vụ của bạn.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="V-Các-nguyên-tắc-chung-khác">V. Các nguyên tắc chung khác<a href="#V-Các-nguyên-tắc-chung-khác" class="hash-link" aria-label="Direct link to V. Các nguyên tắc chung khác" title="Direct link to V. Các nguyên tắc chung khác">​</a></h3>
+<ol>
+<li>
+<p><strong>Keep It Simple, Stupid (KISS):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Luôn tìm kiếm giải pháp đơn giản nhất cho vấn đề.</li>
+<li><strong>Áp dụng:</strong> Tránh over-engineering. Một kiến trúc đơn giản thường dễ hiểu, dễ gỡ lỗi và dễ mở rộng hơn một kiến trúc phức tạp.</li>
+</ul>
+</li>
+<li>
+<p><strong>You Ain&#x27;t Gonna Need It (YAGNI):</strong></p>
+<ul>
+<li><strong>Triết lý:</strong> Không thêm chức năng hoặc phức tạp hóa mã nếu bạn không thực sự cần nó ngay bây giờ.</li>
+<li><strong>Áp dụng:</strong> Phát triển dần dần, chỉ thêm những gì cần thiết. Chống lại cám dỗ dự đoán các nhu cầu tương lai quá mức.</li>
+</ul>
+</li>
+</ol>
+<hr></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/golang/go_error"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">go_error</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/golang/handling_error_exception_api"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">handling_error_exception_api</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#I-Đơn-giản--Rõ-ràng-Simplicity--Readability" class="table-of-contents__link toc-highlight">I. Đơn giản &amp; Rõ ràng (Simplicity &amp; Readability)</a></li><li><a href="#II-Hiệu-suất--Hiệu-quả-Performance--Efficiency" class="table-of-contents__link toc-highlight">II. Hiệu suất &amp; Hiệu quả (Performance &amp; Efficiency)</a></li><li><a href="#III-Khả-năng-Kiểm-thử--Bảo-trì-Testability--Maintainability" class="table-of-contents__link toc-highlight">III. Khả năng Kiểm thử &amp; Bảo trì (Testability &amp; Maintainability)</a></li><li><a href="#IV-Kiến-trúc--Thiết-kế-hệ-thống-Architecture--System-Design" class="table-of-contents__link toc-highlight">IV. Kiến trúc &amp; Thiết kế hệ thống (Architecture &amp; System Design)</a></li><li><a href="#V-Các-nguyên-tắc-chung-khác" class="table-of-contents__link toc-highlight">V. Các nguyên tắc chung khác</a></li></ul></div></div></div></div></main></div></div></div></div>
+</body>
+</html>

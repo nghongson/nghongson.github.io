@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkleonguyen=self.webpackChunkleonguyen||[]).push([[1704],{71157:e=>{e.exports=JSON.parse('{"tags":[{"label":"excalidraw","permalink":"/docs/tags/excalidraw","count":1}]}')}}]);

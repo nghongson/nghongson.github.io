@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-golang/patterns_in_go" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.3.2">
+<title data-rh="true">patterns_in_go | Leo Nguyen</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://nghongson.github.io/docs/golang/patterns_in_go"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="patterns_in_go | Leo Nguyen"><meta data-rh="true" name="description" content="I. Mẫu Đồng thời (Concurrency Patterns) - Thế mạnh cốt lõi của Go"><meta data-rh="true" property="og:description" content="I. Mẫu Đồng thời (Concurrency Patterns) - Thế mạnh cốt lõi của Go"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://nghongson.github.io/docs/golang/patterns_in_go"><link data-rh="true" rel="alternate" href="https://nghongson.github.io/docs/golang/patterns_in_go" hreflang="en"><link data-rh="true" rel="alternate" href="https://nghongson.github.io/docs/golang/patterns_in_go" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Leo Nguyen RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Leo Nguyen Atom Feed"><link rel="stylesheet" href="/assets/css/styles.f3523287.css">
+<script src="/assets/js/runtime~main.6233e384.js" defer="defer"></script>
+<script src="/assets/js/main.92d2f3a2.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/leo.jpg" alt="Leo Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/leo.jpg" alt="Leo Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Docs</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Docs</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/server">Server</a><button aria-label="Expand sidebar category &#x27;Server&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/shopify">Shopify</a><button aria-label="Expand sidebar category &#x27;Shopify&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/vim">Vim</a><button aria-label="Expand sidebar category &#x27;Vim&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/architect">Architect</a><button aria-label="Expand sidebar category &#x27;Architect&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/golang">Golang</a><button aria-label="Collapse sidebar category &#x27;Golang&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/Awesome">Awesome</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/GORM/">GORM</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/Go Concurrency Patterns">Go Concurrency Patterns</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/GoFiber/">GoFiber</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/golang/Graphql/GraphQL Server Generator for Go">Graphql</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/SOLID Golang">SOLID Golang</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/go_error">go_error</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/go_principles">go_principles</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/handling_error_exception_api">handling_error_exception_api</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/golang/patterns_in_go">patterns_in_go</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/golang/some_problems">some_problems</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/mage2">Mage2</a><button aria-label="Expand sidebar category &#x27;Mage2&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/microservices">Microservices</a><button aria-label="Expand sidebar category &#x27;Microservices&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/nextjs">Nextjs</a><button aria-label="Expand sidebar category &#x27;Nextjs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/nodejs">Nodejs</a><button aria-label="Expand sidebar category &#x27;Nodejs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/my-workflow">My Workflow</a><button aria-label="Expand sidebar category &#x27;My Workflow&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/database">Database</a><button aria-label="Expand sidebar category &#x27;Database&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/books">Books</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/Excalidraw/Drawing 2024-06-26 14.49.40.excalidraw">Excalidraw</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/rust/">index</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/web3/DApp">web3</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/golang"><span itemprop="name">Golang</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">patterns_in_go</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>patterns_in_go</h1></header><h3 class="anchor anchorWithStickyNavbar_LWe7" id="I-Mẫu-Đồng-thời-Concurrency-Patterns---Thế-mạnh-cốt-lõi-của-Go">I. Mẫu Đồng thời (Concurrency Patterns) - Thế mạnh cốt lõi của Go<a href="#I-Mẫu-Đồng-thời-Concurrency-Patterns---Thế-mạnh-cốt-lõi-của-Go" class="hash-link" aria-label="Direct link to I. Mẫu Đồng thời (Concurrency Patterns) - Thế mạnh cốt lõi của Go" title="Direct link to I. Mẫu Đồng thời (Concurrency Patterns) - Thế mạnh cốt lõi của Go">​</a></h3>
+<p>Các mẫu này khai thác triệt để <code>goroutines</code> và <code>channels</code> để quản lý các tác vụ đồng thời một cách hiệu quả và an toàn.</p>
+<ol>
+<li>
+<p><strong>Worker Pool (Nhóm Công việc)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Giới hạn số lượng <code>goroutines</code> chạy đồng thời để xử lý một tập hợp các công việc. Các công việc được gửi vào một kênh (channel), và một số lượng <code>goroutines</code> cố định (workers) sẽ lấy công việc từ kênh đó để xử lý.</li>
+<li><strong>Khi sử dụng:</strong> Khi bạn có nhiều tác vụ cần xử lý nhưng muốn kiểm soát tài nguyên (CPU, memory, kết nối database) và tránh làm quá tải hệ thống. Ví dụ: xử lý hàng đợi tin nhắn, nén ảnh, thực hiện các yêu cầu API bên ngoài.</li>
+<li><strong>Cách tiếp cận:</strong>
+<ul>
+<li>Tạo một kênh <code>jobs</code> để gửi công việc.</li>
+<li>Tạo một kênh <code>results</code> để nhận kết quả.</li>
+<li>Khởi tạo N <code>goroutines</code> (workers), mỗi worker đọc từ kênh <code>jobs</code>, xử lý, và ghi kết quả vào kênh <code>results</code>.</li>
+<li>Đóng kênh <code>jobs</code> khi tất cả công việc đã được gửi.</li>
+<li>Sử dụng <code>sync.WaitGroup</code> để chờ tất cả workers hoàn thành.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Fan-Out / Fan-In (Phân Luồng / Gom Luồng)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong>
+<ul>
+<li><strong>Fan-Out:</strong> Phân chia một luồng công việc thành nhiều <code>goroutines</code> để xử lý song song.</li>
+<li><strong>Fan-In:</strong> Gom kết quả từ nhiều <code>goroutines</code> hoặc nhiều kênh thành một kênh duy nhất.</li>
+</ul>
+</li>
+<li><strong>Khi sử dụng:</strong>
+<ul>
+<li><strong>Fan-Out:</strong> Khi bạn cần xử lý một lượng lớn dữ liệu hoặc tác vụ một cách song song để tăng tốc độ.</li>
+<li><strong>Fan-In:</strong> Khi bạn muốn tổng hợp kết quả từ các nguồn xử lý song song vào một điểm duy nhất để tiếp tục xử lý hoặc trả về.</li>
+</ul>
+</li>
+<li><strong>Cách tiếp cận:</strong>
+<ul>
+<li><strong>Fan-Out:</strong> Đọc từ kênh đầu vào, tạo nhiều <code>goroutines</code> để xử lý từng phần, mỗi <code>goroutine</code> ghi kết quả vào kênh riêng hoặc một kênh chung.</li>
+<li><strong>Fan-In:</strong> Một <code>goroutine</code> chính đọc từ nhiều kênh kết quả và gửi chúng vào một kênh tổng hợp.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Pipelines (Đường ống)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Xử lý dữ liệu theo một chuỗi các giai đoạn, trong đó đầu ra của một giai đoạn trở thành đầu vào của giai đoạn tiếp theo. Mỗi giai đoạn thường chạy trong một <code>goroutine</code> riêng biệt và giao tiếp qua <code>channels</code>.</li>
+<li><strong>Khi sử dụng:</strong> Khi bạn cần xử lý dữ liệu qua nhiều bước tuần tự nhưng muốn tối ưu hóa hiệu suất bằng cách xử lý các phần khác nhau của dữ liệu ở các giai đoạn khác nhau một cách đồng thời. Ví dụ: xử lý ETL (Extract, Transform, Load), chuỗi xử lý hình ảnh, phân tích dữ liệu.</li>
+<li><strong>Cách tiếp cận:</strong> Mỗi hàm (hoặc nhóm hàm) đại diện cho một giai đoạn, nhận kênh đầu vào và trả về kênh đầu ra.</li>
+</ul>
+</li>
+<li>
+<p><strong>Context (Ngữ cảnh)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Là một đối tượng (kiểu <code>context.Context</code>) được truyền qua các lời gọi hàm để mang tín hiệu hủy bỏ (cancellation), thời hạn (deadline/timeout) và các giá trị theo yêu cầu (request-scoped values) qua các ranh giới API và giữa các <code>goroutines</code>.</li>
+<li><strong>Khi sử dụng:</strong> <strong>Luôn luôn</strong> sử dụng trong các ứng dụng web/API, microservices, hoặc bất kỳ hệ thống nào có các tác vụ đồng thời hoặc lâu dài cần được quản lý lifecycle. Điều này đặc biệt quan trọng để ngăn chặn rò rỉ <code>goroutine</code> và giới hạn thời gian thực thi.</li>
+<li><strong>Cách tiếp cận:</strong>
+<ul>
+<li>Truyền <code>context.Context</code> làm tham số đầu tiên của các hàm.</li>
+<li>Sử dụng <code>context.WithTimeout</code>, <code>context.WithDeadline</code>, <code>context.WithCancel</code> để tạo các ngữ cảnh con.</li>
+<li>Sử dụng <code>select</code> với <code>&lt;-ctx.Done()</code> để lắng nghe tín hiệu hủy bỏ.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Rate Limiter (Bộ Giới hạn Tốc độ)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Kiểm soát tần suất mà một hành động (ví dụ: gọi API, gửi tin nhắn) có thể được thực hiện để ngăn chặn quá tải dịch vụ hoặc tuân thủ các giới hạn của bên thứ ba.</li>
+<li><strong>Khi sử dụng:</strong> Bảo vệ tài nguyên của bạn, tuân thủ chính sách của API bên ngoài, hoặc đảm bảo công bằng trong việc sử dụng dịch vụ.</li>
+<li><strong>Cách tiếp cận:</strong> Sử dụng gói <code>golang.org/x/time/rate</code> hoặc triển khai bằng <code>channels</code> và <code>time.Ticker</code> để chỉ cho phép một số lượng request nhất định trong một khoảng thời gian cụ thể.</li>
+</ul>
+</li>
+<li>
+<p><strong>Error Group (Nhóm Lỗi)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Quản lý lỗi từ nhiều <code>goroutines</code> con, cho phép bạn đợi tất cả các <code>goroutines</code> hoàn thành và thu thập lỗi từ chúng. Nó cũng cung cấp một cơ chế để hủy bỏ tất cả các <code>goroutines</code> con nếu một trong số chúng trả về lỗi.</li>
+<li><strong>Khi sử dụng:</strong> Khi bạn khởi chạy nhiều <code>goroutines</code> không phụ thuộc vào nhau và muốn chờ chúng hoàn thành, thu thập tất cả lỗi (hoặc lỗi đầu tiên), và có thể hủy bỏ những <code>goroutine</code> khác nếu có lỗi xảy ra.</li>
+<li><strong>Cách tiếp cận:</strong> Sử dụng gói <code>golang.org/x/sync/errgroup</code>.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="II-Mẫu-Thiết-kế-Chung--Go-Idiomatic-General--Go-Idiomatic-Design-Patterns">II. Mẫu Thiết kế Chung &amp; Go Idiomatic (General &amp; Go Idiomatic Design Patterns)<a href="#II-Mẫu-Thiết-kế-Chung--Go-Idiomatic-General--Go-Idiomatic-Design-Patterns" class="hash-link" aria-label="Direct link to II. Mẫu Thiết kế Chung &amp; Go Idiomatic (General &amp; Go Idiomatic Design Patterns)" title="Direct link to II. Mẫu Thiết kế Chung &amp; Go Idiomatic (General &amp; Go Idiomatic Design Patterns)">​</a></h3>
+<p>Đây là các mẫu phổ biến trong lập trình hướng đối tượng được điều chỉnh hoặc có cách triển khai đặc trưng trong Go, hoặc các nguyên tắc thiết kế được Go khuyến khích.</p>
+<ol>
+<li>
+<p><strong>Repository Pattern (Mẫu Repository)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Trừu tượng hóa lớp truy cập dữ liệu (data access layer) khỏi lớp nghiệp vụ (business logic). Lớp nghiệp vụ giao tiếp với một interface <code>Repository</code> mà không cần biết chi tiết về cách dữ liệu được lưu trữ (SQL, NoSQL, in-memory, v.v.).</li>
+<li><strong>Khi sử dụng:</strong> <strong>Bắt buộc</strong> trong kiến trúc microservices với Go để tách biệt logic nghiệp vụ khỏi chi tiết lưu trữ dữ liệu, tăng cường khả năng kiểm thử, linh hoạt thay đổi cơ sở dữ liệu và tuân thủ DDD.</li>
+<li><strong>Cách tiếp cận:</strong> Định nghĩa một <code>interface</code> cho Repository trong domain layer hoặc service layer. Triển khai concrete structs cho từng loại cơ sở dữ liệu.</li>
+</ul>
+</li>
+<li>
+<p><strong>Options Pattern / Functional Options Pattern (Mẫu Tùy chọn / Mẫu Tùy chọn Hàm)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Cung cấp một cách linh hoạt v à có thể mở rộng để cấu hình các <code>struct</code> hoặc hàm, đặc biệt khi có nhiều tham số tùy chọn. Thay vì truyền nhiều tham số <code>nil</code> hoặc một <code>Config</code> struct lớn, bạn truyền một danh sách các &quot;option functions&quot; có thể thay đổi trạng thái của đối tượng/hàm.</li>
+<li><strong>Khi sử dụng:</strong> Khi bạn cần tạo các đối tượng hoặc gọi các hàm với nhiều tham số cấu hình tùy chọn mà không muốn có constructor/hàm với quá nhiều tham số. Rất phổ biến trong các thư viện Go.</li>
+<li><strong>Cách tiếp cận:</strong> Định nghĩa kiểu <code>Option func(*MyStruct)</code> và các hàm tạo <code>Option</code> (ví dụ: <code>WithTimeout(d time.Duration) Option</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Builder Pattern (Mẫu Builder)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Cung cấp một API theo chuỗi (chainable API) để xây dựng các đối tượng phức tạp từng bước một, tách biệt quá trình xây dựng khỏi biểu diễn cuối cùng của đối tượng.</li>
+<li><strong>Khi sử dụng:</strong> Khi một đối tượng có nhiều thuộc tính tùy chọn hoặc yêu cầu một quá trình xây dựng nhiều bước, hoặc khi bạn muốn đảm bảo tính bất biến (immutability) sau khi đối tượng được tạo.</li>
+<li><strong>Cách tiếp cận:</strong> Tạo một <code>Builder</code> struct với các phương thức setter trả về <code>*Builder</code> để cho phép gọi chuỗi (method chaining), và một phương thức <code>Build()</code> trả về đối tượng đã hoàn thành.</li>
+</ul>
+</li>
+<li>
+<p><strong>Strategy Pattern (Mẫu Chiến lược)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Định nghĩa một họ các thuật toán, đóng gói mỗi thuật toán và làm cho chúng có thể hoán đổi cho nhau. Nó cho phép một client chọn thuật toán để sử dụng tại thời điểm chạy.</li>
+<li><strong>Khi sử dụng:</strong> Khi bạn có nhiều biến thể của một hành vi hoặc thuật toán và muốn thay đổi giữa chúng một cách linh hoạt mà không sửa đổi code client.</li>
+<li><strong>Cách tiếp cận:</strong> Định nghĩa một <code>interface</code> cho chiến lược (ví dụ: <code>PaymentStrategy</code>). Các struct cụ thể triển khai interface đó. Client chứa một trường <code>PaymentStrategy</code> và gọi phương thức trên đó.</li>
+</ul>
+</li>
+<li>
+<p><strong>Decorator Pattern (Mẫu Decorator)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Gắn thêm các hành vi hoặc trách nhiệm mới vào một đối tượng một cách động.</li>
+<li><strong>Khi sử dụng:</strong> Khi bạn muốn mở rộng chức năng của một đối tượng mà không cần kế thừa hoặc thay đổi cấu trúc của nó. Rất hữu ích cho logging, metrics, authentication/authorization, caching...</li>
+<li><strong>Cách tiếp cận:</strong> Tạo một <code>struct</code> Decorator bao bọc một <code>interface</code> cụ thể. Phương thức của Decorator gọi phương thức tương ứng trên đối tượng được bọc, thêm logic bổ sung trước hoặc sau đó.</li>
+</ul>
+</li>
+<li>
+<p><strong>&quot;Accept Interfaces, Return Structs&quot; (Chấp nhận Interface, Trả về Struct)</strong></p>
+<ul>
+<li>
+<p><strong>Mô tả:</strong> Đây là một nguyên tắc idiomatic trong Go: các hàm hoặc phương thức nên chấp nhận các <code>interface</code> làm tham số đầu vào (để tăng tính linh hoạt và khả năng kiểm thử), nhưng nên trả về các <code>struct</code> cụ thể (để cung cấp đầy đủ chức năng).</p>
+</li>
+<li>
+<p><strong>Khi sử dụng:</strong> Hầu hết mọi nơi trong thiết kế API và gói Go.</p>
+</li>
+<li>
+<p><strong>Cách tiếp cận:</strong></p>
+<div class="language-go codeBlockContainer_Ckt0 theme-code-block" style="--prism-background-color:hsl(220, 13%, 18%);--prism-color:hsl(220, 14%, 71%)"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-go codeBlock_bY9V thin-scrollbar" style="background-color:hsl(220, 13%, 18%);color:hsl(220, 14%, 71%);text-shadow:0 1px rgba(0, 0, 0, 0.3)"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:hsl(220, 14%, 71%);text-shadow:0 1px rgba(0, 0, 0, 0.3)"><span class="token comment" style="color:hsl(220, 10%, 40%)">// Bad: less flexible, tightly coupled</span><span class="token plain"></span><br></span><span class="token-line" style="color:hsl(220, 14%, 71%);text-shadow:0 1px rgba(0, 0, 0, 0.3)"><span class="token plain"></span><span class="token comment" style="color:hsl(220, 10%, 40%)">// func NewService(db *sql.DB) *Service {...}</span><span class="token plain"></span><br></span><span class="token-line" style="color:hsl(220, 14%, 71%);text-shadow:0 1px rgba(0, 0, 0, 0.3)"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:hsl(220, 14%, 71%);text-shadow:0 1px rgba(0, 0, 0, 0.3)"><span class="token plain"></span><span class="token comment" style="color:hsl(220, 10%, 40%)">// Good: accepts any type that implements the DBClient interface</span><span class="token plain"></span><br></span><span class="token-line" style="color:hsl(220, 14%, 71%);text-shadow:0 1px rgba(0, 0, 0, 0.3)"><span class="token plain"></span><span class="token keyword" style="color:hsl(286, 60%, 67%)">func</span><span class="token plain"> </span><span class="token function" style="color:hsl(207, 82%, 66%)">NewService</span><span class="token punctuation" style="color:hsl(220, 14%, 71%)">(</span><span class="token plain">db DBClient</span><span class="token punctuation" style="color:hsl(220, 14%, 71%)">)</span><span class="token plain"> </span><span class="token operator" style="color:hsl(207, 82%, 66%)">*</span><span class="token plain">Service </span><span class="token punctuation" style="color:hsl(220, 14%, 71%)">{</span><span class="token plain"> </span><span class="token comment" style="color:hsl(220, 10%, 40%)">// DBClient is an interface</span><span class="token plain"></span><br></span><span class="token-line" style="color:hsl(220, 14%, 71%);text-shadow:0 1px rgba(0, 0, 0, 0.3)"><span class="token plain">    </span><span class="token keyword" style="color:hsl(286, 60%, 67%)">return</span><span class="token plain"> </span><span class="token operator" style="color:hsl(207, 82%, 66%)">&amp;</span><span class="token plain">Service</span><span class="token punctuation" style="color:hsl(220, 14%, 71%)">{</span><span class="token plain">db</span><span class="token punctuation" style="color:hsl(220, 14%, 71%)">:</span><span class="token plain"> db</span><span class="token punctuation" style="color:hsl(220, 14%, 71%)">}</span><span class="token plain"> </span><span class="token comment" style="color:hsl(220, 10%, 40%)">// Service is a concrete struct</span><span class="token plain"></span><br></span><span class="token-line" style="color:hsl(220, 14%, 71%);text-shadow:0 1px rgba(0, 0, 0, 0.3)"><span class="token plain"></span><span class="token punctuation" style="color:hsl(220, 14%, 71%)">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="III-Mẫu-Kiến-trúc-Microservices-Microservices-Architectural-Patterns">III. Mẫu Kiến trúc Microservices (Microservices Architectural Patterns)<a href="#III-Mẫu-Kiến-trúc-Microservices-Microservices-Architectural-Patterns" class="hash-link" aria-label="Direct link to III. Mẫu Kiến trúc Microservices (Microservices Architectural Patterns)" title="Direct link to III. Mẫu Kiến trúc Microservices (Microservices Architectural Patterns)">​</a></h3>
+<p>Các mẫu này đặc biệt quan trọng khi xây dựng và quản lý các hệ thống phân tán với Go.</p>
+<ol>
+<li>
+<p><strong>Domain-Driven Design (DDD) Bounded Contexts</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Chia hệ thống thành các &quot;ngữ cảnh giới hạn&quot; (Bounded Contexts) riêng biệt, mỗi ngữ cảnh có một mô hình miền (domain model) và ngôn ngữ chung (ubiquitous language) riêng. Mỗi microservice thường tương ứng với một Bounded Context.</li>
+<li><strong>Khi sử dụng:</strong> <strong>Cơ sở</strong> để thiết kế và chia nhỏ các microservices. Giúp xác định ranh giới dịch vụ, giảm thiểu sự phụ thuộc và cho phép phát triển độc lập.</li>
+<li><strong>Cách tiếp cận:</strong> Phân tích miền nghiệp vụ, xác định các ranh giới tự nhiên nơi các khái niệm (entities, aggregates) có ý nghĩa khác nhau hoặc được quản lý bởi các nhóm khác nhau.</li>
+</ul>
+</li>
+<li>
+<p><strong>Saga Pattern (Mẫu Saga)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Một cách để quản lý các giao dịch phân tán (distributed transactions) trong kiến trúc microservices. Một Saga là một chuỗi các giao dịch cục bộ (local transactions) riêng lẻ trong mỗi dịch vụ. Nếu một giao dịch cục bộ thất bại, Saga sẽ thực hiện các giao dịch bù trừ (compensating transactions) để hoàn tác các thay đổi đã thực hiện trước đó.</li>
+<li><strong>Khi sử dụng:</strong> Khi bạn cần duy trì tính nhất quán dữ liệu qua nhiều dịch vụ mà không sử dụng giao dịch 2-phase commit (2PC) truyền thống (thường không khả thi trong microservices).</li>
+<li><strong>Cách tiếp cận:</strong>
+<ul>
+<li><strong>Choreography (điều phối):</strong> Các dịch vụ tự phát ra/lắng nghe các sự kiện và tự điều phối Saga.</li>
+<li><strong>Orchestration (điều hành):</strong> Một <code>Orchestrator</code> service trung tâm điều khiển luồng của Saga.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Circuit Breaker (Mẫu Ngắt Mạch)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Một mẫu phòng vệ để ngăn chặn sự cố cascading failures trong hệ thống phân tán. Khi một dịch vụ con bắt đầu trả về lỗi hoặc phản hồi chậm, Circuit Breaker sẽ &quot;mở mạch&quot; (open the circuit), chuyển hướng các yêu cầu đến dịch vụ đó sang một phản hồi lỗi tức thì thay vì tiếp tục gửi yêu cầu và làm quá tải dịch vụ bị lỗi. Sau một thời gian, nó sẽ thử lại.</li>
+<li><strong>Khi sử dụng:</strong> Khi gọi các dịch vụ bên ngoài hoặc các microservices khác để tăng tính ổn định và khả năng phục hồi của hệ thống.</li>
+<li><strong>Cách tiếp cận:</strong> Sử dụng thư viện như <code>github.com/sony/gobreaker</code> hoặc tự triển khai với các trạng thái <code>Closed</code>, <code>Open</code>, <code>Half-Open</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Retry Pattern (Mẫu Thử Lại)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Tự động thử lại một hoạt động bị lỗi (ví dụ: gọi API, truy vấn cơ sở dữ liệu) với hy vọng rằng nó sẽ thành công trong lần thử tiếp theo, đặc biệt cho các lỗi tạm thời (transient failures).</li>
+<li><strong>Khi sử dụng:</strong> Khi tương tác với các hệ thống có thể gặp lỗi tạm thời (mạng chập chờn, dịch vụ khác đang khởi động lại, giới hạn số lượng request tạm thời).</li>
+<li><strong>Cách tiếp cận:</strong> Sử dụng vòng lặp với <code>time.Sleep</code> và các chiến lược backoff (ví dụ: exponential backoff) để tăng thời gian chờ giữa các lần thử lại. Cần kết hợp với <code>context.Context</code> để có thể hủy bỏ.</li>
+</ul>
+</li>
+<li>
+<p><strong>Idempotent Operations (Thao tác Bất Biến)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Thiết kế các thao tác sao cho việc thực hiện chúng nhiều lần sẽ tạo ra cùng một kết quả như khi thực hiện một lần. Điều này rất quan trọng trong hệ thống phân tán nơi tin nhắn có thể được gửi nhiều lần (ví dụ: do thử lại).</li>
+<li><strong>Khi sử dụng:</strong> <strong>Bắt buộc</strong> khi thiết kế các API nhận lệnh (commands), xử lý tin nhắn từ hàng đợi, hoặc bất kỳ thao tác nào có thể được gọi lại.</li>
+<li><strong>Cách tiếp cận:</strong>
+<ul>
+<li>Sử dụng ID duy nhất cho mỗi yêu cầu (ví dụ: <code>Idempotency-Key</code> trong header HTTP).</li>
+<li>Kiểm tra sự tồn tại của ID đó trong cơ sở dữ liệu trước khi xử lý.</li>
+<li>Đối với database migrations: <strong>Bắt buộc</strong> sử dụng các công cụ di chuyển cơ sở dữ liệu bất biến (như Goose, Migrate) để đảm bảo các thay đổi schema/data an toàn khi chạy nhiều lần.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Event-Driven Architecture (Kiến trúc Hướng Sự kiện)</strong></p>
+<ul>
+<li><strong>Mô tả:</strong> Các dịch vụ giao tiếp bằng cách phát ra và tiêu thụ các sự kiện. Thay vì gọi trực tiếp nhau, các dịch vụ publish sự kiện khi có điều gì đó quan trọng xảy ra, và các dịch vụ khác đăng ký lắng nghe các sự kiện đó để phản ứng.</li>
+<li><strong>Khi sử dụng:</strong> Để tăng cường tính decoupling giữa các microservices, cho phép mở rộng hệ thống dễ dàng hơn và xây dựng các hệ thống có tính nhất quán cuối cùng (eventual consistency).</li>
+<li><strong>Cách tiếp cận:</strong> Sử dụng Message Brokers (như Kafka, NATS, RabbitMQ) để quản lý việc publish/subscribe sự kiện.</li>
+</ul>
+</li>
+</ol>
+<hr></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/golang/handling_error_exception_api"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">handling_error_exception_api</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/golang/some_problems"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">some_problems</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#I-Mẫu-Đồng-thời-Concurrency-Patterns---Thế-mạnh-cốt-lõi-của-Go" class="table-of-contents__link toc-highlight">I. Mẫu Đồng thời (Concurrency Patterns) - Thế mạnh cốt lõi của Go</a></li><li><a href="#II-Mẫu-Thiết-kế-Chung--Go-Idiomatic-General--Go-Idiomatic-Design-Patterns" class="table-of-contents__link toc-highlight">II. Mẫu Thiết kế Chung &amp; Go Idiomatic (General &amp; Go Idiomatic Design Patterns)</a></li><li><a href="#III-Mẫu-Kiến-trúc-Microservices-Microservices-Architectural-Patterns" class="table-of-contents__link toc-highlight">III. Mẫu Kiến trúc Microservices (Microservices Architectural Patterns)</a></li></ul></div></div></div></div></main></div></div></div></div>
+</body>
+</html>
