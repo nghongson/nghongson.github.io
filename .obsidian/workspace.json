@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/mage2/setup.md",
+                "file": "docs/golang/ai report/Saga Pattern.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "setup"
+              "title": "Saga Pattern"
             }
           }
         ]
@@ -171,6 +171,9 @@
   },
   "active": "6add450b8139602a",
   "lastOpenFiles": [
+    "docs/mage2/setup.md",
+    "docs/golang/ai report/Saga Pattern.md",
+    "docs/golang/ai report",
     "docs/golang/go_error.md~",
     "docs/mage2/setup.md~",
     "docs/nodejs/Typescript/Mixins.md~",
