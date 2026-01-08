@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
+import { Helmet } from "react-helmet";
 
 import styles from "./index.module.css";
 
@@ -13,6 +14,21 @@ export default function Home(): JSX.Element {
       title={`Wellcome to Leo Nguyen's Documents`}
       description="Description will go into a meta tag in <head />"
     >
+      <Helmet>
+        {/* Google tag (gtag.js) script */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-T892DT3SKB"
+        ></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-T892DT3SKB');
+         `}
+        </script>
+      </Helmet>
       <main>
         <div className="overflow-y-auto sm:p-0 pt-4 pr-4 pb-20 pl-4 bg-gray-800">
           <div className="flex justify-center items-end text-center min-h-screen sm:block">
